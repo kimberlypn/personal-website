@@ -19,3 +19,13 @@ import "phoenix_html"
 // paths "./socket" or full ones "web/static/js/socket".
 
 // import socket from "./socket"
+
+import run from "./components/PersonalWebsite";
+
+function init() {
+  let root = document.getElementById('root');
+  run(root);
+}
+
+// Use jQuery to delay until page loaded.
+$(init);
