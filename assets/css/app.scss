@@ -6,12 +6,33 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 25%;
+  width: 27%;
 }
 
 #home img {
   height: 100%;
   width: 100%;
   border-radius: 50%;
+}
+
+#home .fas {
+  font-size: 30px;
+  color: #72b2a9;
+}
+
+#home-btns .col-md-4:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+#home-btns {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#home-btns p {
+  text-transform: uppercase;
+  margin-top: 5px;
+  color: #5b5e5d;
 }
 /********************************* END OF HOME ********************************/
