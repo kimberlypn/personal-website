@@ -30,6 +30,28 @@ body {
 }
 /************************* END OF SHARED ACROSS PAGES *************************/
 
+/********************************* NAVIGATION *********************************/
+#navigation {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#navigation p {
+  text-transform: uppercase;
+  margin-top: 5px;
+}
+
+#navigation .fas {
+  font-size: 30px;
+  color: #72b2a9;
+}
+
+#navigation .col-md-3:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+/****************************** END OF NAVIGATION *****************************/
+
 /************************************* HOME ***********************************/
 #home {
   width: 800px;
@@ -55,25 +77,5 @@ body {
   width: 450px;
   height: 450px;
   border-radius: 50%;
-}
-
-#home .fas {
-  font-size: 30px;
-  color: #72b2a9;
-}
-
-#home-btns .col-md-3:hover {
-  opacity: 0.7;
-  cursor: pointer;
-}
-
-#home-btns {
-  text-align: center;
-  margin-top: 20px;
-}
-
-#home-btns p {
-  text-transform: uppercase;
-  margin-top: 5px;
 }
 /********************************* END OF HOME ********************************/
