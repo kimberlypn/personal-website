@@ -4,12 +4,12 @@ import { Navbar, Nav, NavItem, NavLink } from 'reactstrap';
 
 // Renders the navigation bar
 export default function Navigation(props) {
-
   /*
   Adds smooth scrolling between sections;
   SOURCE: https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_ref_js_scrollspy_animate&stacked=h
   */
-  $(document).ready(function(){
+  $(document).ready(function() {
+    console.log('hey');
     $('body').scrollspy({target: ".navbar", offset: 50});
     // Add smooth scrolling on all links inside the navbar
     $(".nav-link").on('click', function(event) {
@@ -23,7 +23,7 @@ export default function Navigation(props) {
         // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
         $('html, body').animate({
           scrollTop: $(hash).offset().top
-        }, 800, function() {
+        }, 500, function() {
           // Add hash (#) to URL when done scrolling (default click behavior)
           window.location.hash = hash;
         });

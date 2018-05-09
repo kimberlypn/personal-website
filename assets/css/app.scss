@@ -67,6 +67,23 @@ not able to center vertically because body is relative
 }
 /****************************** END OF NAVIGATION *****************************/
 
+/*********************************** FOOTER ***********************************/
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   text-align: right;
+}
+
+.footer img {
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+/******************************** END OF FOOTER *******************************/
+
 /************************************* HOME ***********************************/
 #home .parent {
   width: 800px;
@@ -99,6 +116,28 @@ not able to center vertically because body is relative
 
 /************************************* ABOUT **********************************/
 #about {
-  padding-top:50px;height:600px;
+  padding-top: 50px;
+  height: 600px;
 }
 /********************************* END OF ABOUT *******************************/
+
+/********************************* COURSEWORK *********************************/
+#coursework {
+  padding-top: 50px;
+  height: 600px;
+}
+/****************************** END OF COURSEWORK *****************************/
+
+/********************************** PROJECTS **********************************/
+#projects {
+  padding-top: 50px;
+  height: 600px;
+}
+/******************************* END OF PROJECTS ******************************/
+
+/********************************** CONTACT ***********************************/
+#contact {
+  padding-top: 50px;
+  height: 600px;
+}
+/******************************* END OF CONTACT *******************************/
