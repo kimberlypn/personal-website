@@ -1,17 +1,54 @@
 @import "bootstrap";
 
+/*********************************** FONTS ************************************/
+@font-face {
+  font-family: 'Shorelines Script Bold';
+  src: url('/fonts/Shorelines Script Bold.otf');
+}
+/******************************** END OF FONTS ********************************/
+
+/***************************** SHARED ACROSS PAGES ****************************/
+/* Centers a div vertically and horizontally on the screen */
+.parent {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+/* Centers the contents of the parent div vertically and horizontally */
+.child {
+  display: table-cell;
+  vertical-align: middle;
+}
+/************************* END OF SHARED ACROSS PAGES *************************/
+
 /************************************* HOME ***********************************/
 #home {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 27%;
+  width: 800px;
+  height: 800px;
+  text-align: center;
+}
+
+#home .child {
+  // Width and height need to match those of #home for contents to be centered
+  width: 800px;
+  height: 800px;
+}
+
+#home h1 {
+  font-family: 'Shorelines Script Bold';
+  font-size: 50px;
+  margin-bottom: 30px;
 }
 
 #home img {
-  height: 100%;
-  width: 100%;
+  display:block;
+  margin:auto;
+  height: 50%;
+  width: 50%;
   border-radius: 50%;
 }
 
@@ -20,7 +57,7 @@
   color: #72b2a9;
 }
 
-#home-btns .col-md-4:hover {
+#home-btns .col-md-3:hover {
   opacity: 0.7;
   cursor: pointer;
 }
