@@ -47,13 +47,13 @@ body {
   font-family: 'Shorelines Script Bold';
   font-size: 50px;
   margin-bottom: 30px;
+  color: #484949;
 }
 
 #home img {
-  display:block;
-  margin:auto;
-  height: 50%;
-  width: 50%;
+  // Width and height need to match that of Paper component
+  width: 450px;
+  height: 450px;
   border-radius: 50%;
 }
 
