@@ -8,6 +8,11 @@
 /******************************** END OF FONTS ********************************/
 
 /***************************** SHARED ACROSS PAGES ****************************/
+body {
+  background: url('/images/bg.jpeg');
+  color: #5b5e5d;
+}
+
 /* Centers a div vertically and horizontally on the screen */
 .parent {
   position: absolute;
@@ -70,6 +75,5 @@
 #home-btns p {
   text-transform: uppercase;
   margin-top: 5px;
-  color: #5b5e5d;
 }
 /********************************* END OF HOME ********************************/
