@@ -11,12 +11,17 @@
 body {
   background: url('/images/bg.jpeg');
   color: #5b5e5d;
+  position: relative;
 }
 
-/* Centers a div vertically and horizontally on the screen */
+/*
+Centers a div horizontally and 5% from the top on the screen;
+not able to center vertically because body is relative
+*/
 .parent {
-  position: absolute;
-  margin: auto;
+  position: relative;
+  // top right bottom left
+  margin: 5% auto auto auto;
   top: 0;
   right: 0;
   bottom: 0;
@@ -31,29 +36,39 @@ body {
 /************************* END OF SHARED ACROSS PAGES *************************/
 
 /********************************* NAVIGATION *********************************/
-#navigation {
-  text-align: center;
+.nav {
+  width: 100%;
   margin-top: 20px;
+  text-align: center;
 }
 
-#navigation p {
+.nav-item {
+  width: 25%;
+}
+
+.nav-link {
+  color: #5b5e5d;
+}
+
+.nav-link:hover {
+  opacity: 0.7;
+  cursor: pointer;
+  color: #5b5e5d;
+}
+
+.nav-link p {
   text-transform: uppercase;
   margin-top: 5px;
 }
 
-#navigation .fas {
+.nav-link .fas {
   font-size: 30px;
   color: #72b2a9;
-}
-
-#navigation .col-md-3:hover {
-  opacity: 0.7;
-  cursor: pointer;
 }
 /****************************** END OF NAVIGATION *****************************/
 
 /************************************* HOME ***********************************/
-#home {
+#home .parent {
   width: 800px;
   height: 800px;
   text-align: center;
@@ -68,8 +83,10 @@ body {
 #home h1 {
   font-family: 'Shorelines Script Bold';
   font-size: 50px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   color: #484949;
+  cursor: default;
+  text-align: center;
 }
 
 #home img {
@@ -79,3 +96,9 @@ body {
   border-radius: 50%;
 }
 /********************************* END OF HOME ********************************/
+
+/************************************* ABOUT **********************************/
+#about {
+  padding-top:50px;height:600px;
+}
+/********************************* END OF ABOUT *******************************/

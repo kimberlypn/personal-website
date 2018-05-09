@@ -16,18 +16,20 @@ export default function Home(props) {
   };
 
   return (
-    <MuiThemeProvider>
-      <div className="container parent" id="home">
-        <div className="child">
-          <h1>Kimberly Nguyen</h1>
-          <Row>
+    <div className="container-fluid" id="home">
+      <div className="parent">
+      <div className="child">
+        <h1>Kimberly Nguyen</h1>
+        <Row>
+          <MuiThemeProvider>
             <Paper style={style} zDepth={4} circle={true} >
               <img src="/images/me.jpg" alt="Picture of Myself" />
             </Paper>
-          </Row>
-          <Navigation />
-        </div>
+          </MuiThemeProvider>
+        </Row>
+        <Navigation />
       </div>
-    </MuiThemeProvider>
+      </div>
+    </div>
   );
 }
