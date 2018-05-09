@@ -1,11 +1,13 @@
 import React from 'react';
 import { Row, Col } from 'reactstrap';
 
+import Header from './Header';
+
 // Renders the "Projects" section
 export default function Projects(props) {
   return (
     <div className="container-fluid" id="projects">
-      <h1>Projects</h1>
+      <Header text="Projects" icon={<i className="fas fa-lightbulb"></i>} />
     </div>
   );
 }

@@ -27,7 +27,7 @@ export default function BackToTop(props) {
 
   return (
     <div className="footer">
-      <a id="back-to-top" href="#" class="back-to-top" title="Back to Top">
+      <a href="#" className="back-to-top" id="back-to-top" title="Back to Top">
         {/* IMAGE SOURCE: http://tich-outsourcing.blogspot.com/2014/08/5-best-back-to-top-button-code-for.html */}
         <img src="/images/back-to-top.png" />
       </a>

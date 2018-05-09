@@ -9,7 +9,6 @@ export default function Navigation(props) {
   SOURCE: https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_ref_js_scrollspy_animate&stacked=h
   */
   $(document).ready(function() {
-    console.log('hey');
     $('body').scrollspy({target: ".navbar", offset: 50});
     // Add smooth scrolling on all links inside the navbar
     $(".nav-link").on('click', function(event) {

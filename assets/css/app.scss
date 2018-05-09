@@ -5,6 +5,11 @@
   font-family: 'Shorelines Script Bold';
   src: url('/fonts/Shorelines Script Bold.otf');
 }
+
+@font-face {
+  font-family: 'BEBAS';
+  src: url('/fonts/BEBAS.ttf');
+}
 /******************************** END OF FONTS ********************************/
 
 /***************************** SHARED ACROSS PAGES ****************************/
@@ -12,6 +17,19 @@ body {
   background: url('/images/bg.jpeg');
   color: #5b5e5d;
   position: relative;
+}
+
+h1 {
+  font-family: 'BEBAS';
+  padding: 8px 8px 8px 8px;
+  background-color: #3585a8;
+  color: white;
+  cursor: default;
+}
+
+h1 .fas {
+  font-size: 50px;
+  margin-right: 10px
 }
 
 /*
@@ -106,8 +124,8 @@ not able to center vertically because body is relative
   font-size: 50px;
   margin-bottom: 40px;
   color: #484949;
-  cursor: default;
   text-align: center;
+  background-color: transparent;
 }
 
 #home img {
@@ -130,6 +148,10 @@ not able to center vertically because body is relative
   padding-top: 50px;
   height: 600px;
 }
+
+#coursework h1 {
+  text-align: right;
+}
 /****************************** END OF COURSEWORK *****************************/
 
 /********************************** PROJECTS **********************************/
@@ -143,5 +165,9 @@ not able to center vertically because body is relative
 #contact {
   padding-top: 50px;
   height: 600px;
+}
+
+#contact h1 {
+  text-align: right;
 }
 /******************************* END OF CONTACT *******************************/

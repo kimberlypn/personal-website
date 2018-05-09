@@ -22,7 +22,7 @@ export default function Home(props) {
         <h1>Kimberly Nguyen</h1>
         <Row>
           <MuiThemeProvider>
-            <Paper style={style} zDepth={4} circle={true} >
+            <Paper style={style} zDepth={4} circle={true}>
               <img src="/images/me.jpg" alt="Picture of Myself" />
             </Paper>
           </MuiThemeProvider>
