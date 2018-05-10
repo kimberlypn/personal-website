@@ -2,7 +2,6 @@ import React, { Fragment } from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
-import Navigation from './Navigation';
 import BackToTop from './BackToTop';
 import Home from './Home';
 import About from './About';
