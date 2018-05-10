@@ -6,6 +6,8 @@ import { CardHeader, CardBody } from 'reactstrap';
 
 import Header from './Header';
 
+import Header from './Header';
+
 // Renders the "Coursework" section
 export default function Coursework(props) {
   return (

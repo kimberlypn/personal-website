@@ -194,6 +194,10 @@ not able to center vertically because body is relative
 #coursework .card span {
   font-weight: bold;
 }
+
+#coursework h1 {
+  text-align: right;
+}
 /****************************** END OF COURSEWORK *****************************/
 
 /********************************** PROJECTS **********************************/
@@ -205,6 +209,10 @@ not able to center vertically because body is relative
 /********************************** CONTACT ***********************************/
 #contact {
   height: 100%;
+}
+
+#contact h1 {
+  text-align: right;
 }
 
 #contact h1 {
