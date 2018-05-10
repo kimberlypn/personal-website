@@ -10,6 +10,11 @@
   font-family: 'BEBAS';
   src: url('/fonts/BEBAS.ttf');
 }
+
+@font-face {
+  font-family: 'Roboto-Light';
+  src: url('/fonts/Roboto-Light.ttf');
+}
 /******************************** END OF FONTS ********************************/
 
 /***************************** SHARED ACROSS PAGES ****************************/
@@ -21,7 +26,9 @@ body {
 
 h1 {
   font-family: 'BEBAS';
-  padding: 8px 8px 8px 8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-right: 10px;
   background-color: #3585a8;
   color: white;
   cursor: default;
@@ -29,7 +36,8 @@ h1 {
 
 h1 .fas {
   font-size: 50px;
-  margin-right: 10px
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 /*
@@ -50,6 +58,10 @@ not able to center vertically because body is relative
 .child {
   display: table-cell;
   vertical-align: middle;
+}
+
+#about, #coursework, #projects, #contact {
+  margin-top: 60px;
 }
 /************************* END OF SHARED ACROSS PAGES *************************/
 
@@ -138,15 +150,53 @@ not able to center vertically because body is relative
 
 /************************************* ABOUT **********************************/
 #about {
-  padding-top: 50px;
-  height: 600px;
+  height: 100%;
+}
+
+#about p {
+  margin-top: 40px;
+  font-size: 20px;
+  text-align: center;
+}
+
+#about span {
+  color: #72b2a9;
 }
 /********************************* END OF ABOUT *******************************/
 
 /********************************* COURSEWORK *********************************/
 #coursework {
-  padding-top: 50px;
-  height: 600px;
+  height: 100%;
+}
+
+#coursework h1 {
+  text-align: right;
+}
+
+#coursework .card {
+  margin-top: 40px;
+}
+
+#coursework .card-header {
+  font-family: 'Roboto-Light';
+  background-color: #72b2a9;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#coursework .card .fas, #coursework .card span {
+  color: #72b2a9;
+}
+
+#coursework .card span {
+  font-weight: bold;
+}
+
+#coursework h1 {
+  text-align: right;
 }
 
 #coursework h1 {
@@ -156,15 +206,21 @@ not able to center vertically because body is relative
 
 /********************************** PROJECTS **********************************/
 #projects {
-  padding-top: 50px;
-  height: 600px;
+  height: 100%;
 }
 /******************************* END OF PROJECTS ******************************/
 
 /********************************** CONTACT ***********************************/
 #contact {
-  padding-top: 50px;
-  height: 600px;
+  height: 100%;
+}
+
+#contact h1 {
+  text-align: right;
+}
+
+#contact h1 {
+  text-align: right;
 }
 
 #contact h1 {
