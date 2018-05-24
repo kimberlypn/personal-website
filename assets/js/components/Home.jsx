@@ -9,27 +9,31 @@ import Navigation from './Navigation';
 export default function Home(props) {
   // Style for the Paper component
   const style = {
-    height: 450,
-    width: 450,
+    height: 'auto',
+    width: '100%',
     display: 'block',
     margin: 'auto'
   };
 
   return (
     <div className="container-fluid" id="home">
-      <div className="parent">
-      <div className="child">
-        <h1>Kimberly Nguyen</h1>
-        <Row>
+      <Row>
+        <Col md="12">
+          <h1>Kimberly Nguyen</h1>
+        </Col>
+      </Row>
+      <Row>
+        <Col md="3"></Col>
+        <Col md="6">
           <MuiThemeProvider>
             <Paper style={style} zDepth={4} circle={true}>
               <img src="/images/me.jpg" alt="Picture of Myself" />
             </Paper>
           </MuiThemeProvider>
-        </Row>
-        <Navigation />
-      </div>
-      </div>
+        </Col>
+        <Col md="3"></Col>
+      </Row>
+      <Navigation />
     </div>
   );
 }

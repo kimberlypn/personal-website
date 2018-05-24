@@ -10,7 +10,7 @@ import Header from './Header';
 export default function Coursework(props) {
   return (
     <MuiThemeProvider>
-    <div className="container-fluid" id="coursework">
+    <div className="container-fluid section" id="coursework">
       <Header text="Coursework" icon={<i className="fas fa-book"></i>} />
       <Row>
         <Col md="6">

@@ -32,33 +32,37 @@ export default function Navigation(props) {
   });
 
   return (
-    <Navbar>
-      <Nav>
-        <NavItem>
-          <NavLink href="#about">
-            <i className="fas fa-user-circle"></i>
-            <p>About</p>
-          </NavLink>
-        </NavItem>
-        <NavItem>
-          <NavLink href="#coursework">
-            <i className="fas fa-book"></i>
-            <p>Coursework</p>
-          </NavLink>
-        </NavItem>
-        <NavItem>
-          <NavLink href="#projects">
-            <i className="fas fa-lightbulb"></i>
-            <p>Projects</p>
-          </NavLink>
-        </NavItem>
-        <NavItem>
-          <NavLink href="#contact">
-            <i className="fas fa-envelope"></i>
-            <p>Contact</p>
-          </NavLink>
-        </NavItem>
-      </Nav>
-    </Navbar>
+    <Row>
+      <Col md="12">
+        <Navbar>
+          <Nav>
+            <NavItem>
+              <NavLink href="#about">
+                <i className="fas fa-user-circle"></i>
+                <p>About</p>
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="#coursework">
+                <i className="fas fa-book"></i>
+                <p>Coursework</p>
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="#projects">
+                <i className="fas fa-lightbulb"></i>
+                <p>Projects</p>
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="#contact">
+                <i className="fas fa-envelope"></i>
+                <p>Contact</p>
+              </NavLink>
+            </NavItem>
+          </Nav>
+        </Navbar>
+      </Col>
+    </Row>
   );
 }

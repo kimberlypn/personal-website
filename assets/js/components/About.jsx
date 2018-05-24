@@ -5,11 +5,11 @@ import Header from './Header';
 // Renders the "About" section
 export default function About(props) {
   return (
-    <div className="container-fluid" id="about">
+    <div className="container-fluid section" id="about">
       <Header text="About" icon={<i className="fas fa-user-circle"></i>} />
       <p>
         Hello, world! I am a <span>software developer</span> with an interest in
-        <span> technology in health care</span>. I recently graduated from
+        <span> technology in health care</span>. I graduated from
         <span> Northeastern University</span> with a Bachelor of Science in
         computer science. Before pursuing a degree in CS, I was majoring in
         health science. While I am still driven to innovate this field, I wanted
