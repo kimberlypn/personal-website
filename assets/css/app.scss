@@ -175,12 +175,16 @@ h1 .fas {
 #coursework .card span {
   font-weight: bold;
 }
+
+#coursework .card-body {
+  color: #5b5e5d;
+}
 /****************************** END OF COURSEWORK *****************************/
 
 /********************************** PROJECTS **********************************/
 #projects a:hover {
   text-decoration: none;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 
 #projects .card-title {
@@ -194,21 +198,27 @@ h1 .fas {
 
 #projects .card-text {
   text-align: center;
+  height: 100px;
 }
 
 #projects .card-text p {
   font-family: 'PT_Sans-Narrow-Web-Regular';
   font-size: 18px;
   margin-bottom: 0;
+  color: #5b5e5d;
 }
 
-#projects .card-text a {
+#projects .card-text a, #projects #card-text-expand b {
   color: #72b2a9;
 }
 
 #projects #card-text-expand {
   text-align: left;
   margin-top: 0;
+}
+
+#projects .card-media img {
+  height: 210px;
 }
 /******************************* END OF PROJECTS ******************************/
 
