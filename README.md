@@ -14,7 +14,7 @@ website. I had also always wanted to learn to how to deploy using Heroku, so
 that was a skill that I added to my toolbelt in the process.
 
 ## Design
-![Navigation Bar](screenshots/navigation-bar/png)
+![Navigation Bar](screenshots/navigation-bar.png)
 
 ![About Section](screenshots/about.png)
 
