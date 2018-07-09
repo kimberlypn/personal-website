@@ -14,21 +14,21 @@ website. I had also always wanted to learn how to deploy using Heroku, so that
 was a skill that I added to my toolbelt in this process.
 
 ## Design
-**Header and Navigation Bar**
+>> **Header and Navigation Bar**
 ![Navigation Bar](screenshots/navigation-bar.png)
 
-**About Section**
+>> **About Section**
 ![About Section](screenshots/about.png)
 
-**Coursework Section**
+>> **Coursework Section**
 ![Coursework Section](screenshots/coursework.png)
 
-**Projects Section**
+>> **Projects Section**
 ![Projects Section](screenshots/projects.png)
 
 Each project has a link to its corresponding Github repository, as well as a
 button to toggle additional details.
 ![Projects with Details](screenshots/projects-with-details.png)
 
-**Contact Section**
+>> **Contact Section**
 ![Contact Section](screenshots/contact.png)
