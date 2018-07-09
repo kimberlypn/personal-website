@@ -11,7 +11,7 @@ I only knew the barebones of HTML and CSS.
 After graduating, I decided to try again using my newfound knowledge. I had
 taken Web Development as my capstone and was excited to revamp my personal
 website. I had also always wanted to learn how to deploy using Heroku, so that
-was a skill that I added to my toolbelt in this process.
+was a skill that I added to my toolbelt in the process.
 
 ## Design
 **Header and Navigation Bar**
