@@ -1,19 +1,34 @@
 # PersonalWebsite
 
-To start your Phoenix server:
+My website can be visited at https://kimberlypn.herokuapp.com/.
 
-  * Install dependencies with `mix deps.get`
-  * Install Node.js dependencies with `cd assets && npm install`
-  * Start Phoenix endpoint with `mix phx.server`
+## Introduction
+I built this website using React and deployed it using Heroku. This was my
+second attempt at building a personal website. My [first attempt](https://github.com/kimberlypn/kimberlypn.github.io)
+was in 2016, which was quite early in my computer science career. At the time,
+I only knew the barebones of HTML and CSS.
 
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
+After graduating, I decided to try again using my newfound knowledge. I had
+taken Web Development as my capstone and was excited to revamp my personal
+website. I had also always wanted to learn how to deploy using Heroku, so that
+was a skill that I added to my toolbelt in the process.
 
-Ready to run in production? Please [check our deployment guides](http://www.phoenixframework.org/docs/deployment).
+## Design
+**Header and Navigation Bar**
+![Navigation Bar](screenshots/navigation-bar.png)
 
-## Learn more
+**About Section**
+![About Section](screenshots/about.png)
 
-  * Official website: http://www.phoenixframework.org/
-  * Guides: http://phoenixframework.org/docs/overview
-  * Docs: https://hexdocs.pm/phoenix
-  * Mailing list: http://groups.google.com/group/phoenix-talk
-  * Source: https://github.com/phoenixframework/phoenix
+**Coursework Section**
+![Coursework Section](screenshots/coursework.png)
+
+**Projects Section**
+![Projects Section](screenshots/projects.png)
+
+Each project has a link to its corresponding Github repository, as well as a
+button to toggle additional details.
+![Projects with Details](screenshots/projects-with-details.png)
+
+**Contact Section**
+![Contact Section](screenshots/contact.png)
