@@ -21,6 +21,6 @@ was a skill that I added to my toolbelt in this process.
 ![Coursework Section](screenshots/coursework.png)
 
 ![Projects Section](screenshots/projects.png)
-![Projects with Details](screenshots/projects-details.png)
+![Projects with Details](screenshots/projects-with-details.png)
 
 ![Contact Section](screenshots/contact.png)
