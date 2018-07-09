@@ -4,7 +4,7 @@ My website can be visited at https://kimberlypn.herokuapp.com/.
 
 ## Introduction
 I built this website using React and deployed it using Heroku. This was my
-second attempt at building a personal website. My [first attempt](https://kimberlypn.github.io/)
+second attempt at building a personal website. My [first attempt](https://github.com/kimberlypn/kimberlypn.github.io)
 was in 2016, which was quite early in my computer science career. At the time,
 I only knew the barebones of HTML and CSS.
 
