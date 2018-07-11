@@ -1,4 +1,4 @@
-# PersonalWebsite
+# Personal Website
 
 My website can be visited at https://kimberlypn.herokuapp.com/.
 
