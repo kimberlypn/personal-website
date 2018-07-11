@@ -4,6 +4,8 @@ import { Card, CardImg } from 'reactstrap';
 
 /* Renders the projects page */
 export default function Projects(props) {
+  console.log(props);
+
   return (
     <div id="projects">
       <Row>

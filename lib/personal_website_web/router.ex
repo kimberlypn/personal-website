@@ -23,7 +23,8 @@ defmodule PersonalWebsiteWeb.Router do
   end
 
   # Other scopes may use custom stacks.
-  # scope "/api", PersonalWebsiteWeb do
-  #   pipe_through :api
-  # end
+  scope "/api/v1", PersonalWebsiteWeb do
+    pipe_through :api
+    resources "/projects", ProjectController, except: [:new, :edit]
+  end
 end
