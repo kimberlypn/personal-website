@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 import Navigation from './Navigation';
+import Home from './Home';
 
 export default function run(root) {
   ReactDOM.render(<PersonalWebsite />, root);
@@ -18,6 +19,7 @@ class PersonalWebsite extends React.Component {
       <Router>
         <Fragment>
           <Navigation />
+          <Home />
         </Fragment>
       </Router>
     );

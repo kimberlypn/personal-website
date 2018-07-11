@@ -22,3 +22,11 @@ body {
     color: #59c6bb !important;
 }
 /****************************** END OF NAVIGATION *****************************/
+
+/************************************* HOME ***********************************/
+#home img {
+  // Width and height need to match that of Paper component
+  width: 55%;
+  height: auto;
+}
+/********************************* END OF HOME ********************************/
