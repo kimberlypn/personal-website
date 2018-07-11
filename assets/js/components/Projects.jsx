@@ -11,7 +11,7 @@ export default function Projects(props) {
   });
 
   return (
-    <div id="projects">
+    <div className="container-fluid" id="projects">
       <Row>
         {projects}
       </Row>

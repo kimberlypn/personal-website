@@ -6,7 +6,7 @@ import Contact from './Contact';
 // Renders the home page
 export default function Home(props) {
   return (
-    <div id="home">
+    <div className="container-fluid" id="home">
       <Row>
         <Col md="6" id="me">
           <img src="/images/me.JPG" alt="Picture of Myself" />

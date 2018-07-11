@@ -7,9 +7,11 @@ export default function ProjectCard(props) {
 
   return (
     <Col md="6" className="project-card">
-      <img src={"/images/" + project.img_src} alt={project.img_src} />
-      <div className="project-title">
-        <p>{project.title.toUpperCase()}</p>
+      <div className="project-bg">
+        <img src={"/images/" + project.img_src} alt={project.img_src} />
+        <div className="project-title">
+          <p>{project.title.toUpperCase()}</p>
+        </div>
       </div>
     </Col>
   );

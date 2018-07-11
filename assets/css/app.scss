@@ -72,17 +72,22 @@ body {
 
 /********************************** PROJECTS **********************************/
 .project-card {
-  // Fit as much as can fit into the card to evenly size everything
-  height: 300px;
-  width: 100%;
-  overflow: hidden;
+  margin-bottom: 30px;
 }
 
 .project-card img {
   width: 100%;
 }
 
+.project-bg {
+  // Fit as much as can fit into the card to evenly size everything
+  height: 300px;
+  overflow: hidden;
+}
+
 .project-title {
+  font-size: 30px;
+  // Center the title vertically and horizontally
   display: none;
   position: absolute;
   top: 50%;
@@ -90,28 +95,21 @@ body {
   transform: translate(-50%, -50%);
 }
 
-.project-card p {
-  font-size: 30px;
-}
-
-.project-card:hover img {
+.project-bg:hover img {
   // Hide the image on hover
   opacity: 0;
 }
 
-.project-card:hover {
+.project-bg:hover {
+  // Ease in the background color on hover
   transition: .5s ease;
   background-color: #59c6bb;
 }
 
-.project-card:hover .project-title {
+.project-bg:hover .project-title {
   // Display project title on hover
   display: block;
   color: white;
-}
-
-.project-card {
-  margin-bottom: 30px;
 }
 /******************************* END OF PROJECTS ******************************/
 
