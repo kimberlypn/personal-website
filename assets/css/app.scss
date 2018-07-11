@@ -1,1 +1,24 @@
 @import "bootstrap";
+
+/*********************************** FONTS ************************************/
+@font-face {
+  font-family: 'Gidole-Regular';
+  src: url('/fonts/Gidole-Regular.ttf');
+}
+/******************************** END OF FONTS ********************************/
+
+/***************************** SHARED ACROSS PAGES ****************************/
+body {
+  font-family: 'Gidole-Regular';
+}
+/************************* END OF SHARED ACROSS PAGES *************************/
+
+/********************************* NAVIGATION *********************************/
+.navbar-brand {
+  font-size: 40px;
+}
+
+.nav-item a:hover {
+    color: #59c6bb !important;
+}
+/****************************** END OF NAVIGATION *****************************/

@@ -17,6 +17,7 @@ defmodule PersonalWebsiteWeb.Router do
     pipe_through :browser # Use the default browser stack
 
     get "/", PageController, :index
+    get "/projects", PageController, :index
   end
 
   # Other scopes may use custom stacks.
