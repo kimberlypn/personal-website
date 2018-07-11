@@ -8,8 +8,8 @@ defmodule PersonalWebsite.Repo.Migrations.CreateProjects do
       add :type, :string, default: "N/A", null: false
       add :collaborators, :text, default: "Kimberly Nguyen", null: false
       add :description, :text
-      add :start_date, :date, default: fragment("now()"), null: false
-      add :end_date, :date
+      add :start_date, :date, null: false
+      add :end_date, :date, null: false
       add :img_src, :string, null: false
 
       timestamps()

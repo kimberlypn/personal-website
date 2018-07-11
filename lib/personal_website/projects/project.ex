@@ -20,6 +20,20 @@ defmodule PersonalWebsite.Projects.Project do
   def changeset(project, attrs) do
     project
     |> cast(attrs, [:title, :language, :type, :collaborators, :description, :start_date, :end_date, :img_src])
-    |> validate_required([:title, :language, :type, :collaborators, :start_date, :img_src])
+    |> validate_required([:title, :language, :type, :collaborators, :start_date, :end_date, :img_src])
+    |> validate_dates()
   end
+
+  # Compares the start and end dates
+  defp validate_dates(changeset) do
+    start_date = get_field(changeset, :start_date)
+    end_date = get_field(changeset, :end_date)
+
+    compared = Date.compare(start_date, end_date)
+    valid_dates?(changeset, compared)
+ end
+
+ # Validates if the start date is less than or equal to the end date
+ defp valid_dates?(changeset, compared) when compared == :eq or compared == :lt, do: changeset
+ defp valid_dates?(changeset, _), do: {:error, "Invalid dates."}
 end
