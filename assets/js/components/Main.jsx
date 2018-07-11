@@ -17,7 +17,7 @@ export default function Main(props) {
         <Projects projects={props.projects} />
       } />
       <Route path="/skills" exact={true} render={() =>
-        <Skills />
+        <Skills skills={props.skills} />
       } />
       <Route path="/experience" exact={true} render={() =>
         <Experience />

@@ -18,6 +18,23 @@ class TheServer {
       }
     });
   }
+
+  request_skills() {
+    return $.ajax("/api/v1/skills", {
+      method: "get",
+      dataType: "json",
+      contentType: "application/json; charset=UTF-8",
+      success: (resp) => {
+        store.dispatch({
+          type: 'SKILLS_LIST',
+          skills: resp.data,
+        });
+      },
+      error: (resp) => {
+        alert("Could not load skills");
+      }
+    });
+  }
 }
 
 export default new TheServer();

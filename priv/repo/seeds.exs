@@ -13,6 +13,7 @@
 defmodule Seeds do
   alias PersonalWebsite.Repo
   alias PersonalWebsite.Projects.Project
+  alias PersonalWebsite.Skills.Skill
 
   def insert_projects do
     Repo.delete_all(Project)
@@ -46,8 +47,30 @@ defmodule Seeds do
     })
   end
 
+  def insert_skills do
+    Repo.delete_all(Skill)
+
+    Repo.insert!(%Skill{
+      name: "Elixir",
+      proficiency: 8
+    })
+    Repo.insert!(%Skill{
+      name: "Java",
+      proficiency: 10
+    })
+    Repo.insert!(%Skill{
+      name: "HTML",
+      proficiency: 10
+    })
+    Repo.insert!(%Skill{
+      name: "CSS",
+      proficiency: 10
+    })
+  end
+
   def run do
     insert_projects()
+    insert_skills()
   end
 
   def seed(:dev) do

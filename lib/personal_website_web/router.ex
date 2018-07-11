@@ -26,5 +26,6 @@ defmodule PersonalWebsiteWeb.Router do
   scope "/api/v1", PersonalWebsiteWeb do
     pipe_through :api
     resources "/projects", ProjectController, except: [:new, :edit]
+    resources "/skills", SkillController, except: [:new, :edit]
   end
 end

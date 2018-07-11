@@ -12,10 +12,20 @@ function projects(state = [], action) {
   }
 }
 
+/* List of skills */
+function skills(state = [], action) {
+  switch (action.type) {
+    case 'SKILLS_LIST':
+      return [...action.skills];
+    default:
+      return state;
+  }
+}
+
 function root_reducer(state0, action) {
   // {tasks, users, form} is ES6 shorthand for
   // {tasks: tasks, users: users, form: form}
-  let reducer = combineReducers({projects});
+  let reducer = combineReducers({projects, skills});
   let state1 = reducer(state0, action);
   return deepFreeze(state1);
 };

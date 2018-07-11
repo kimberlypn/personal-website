@@ -2,11 +2,11 @@ import React from 'react';
 import { Col } from 'reactstrap';
 
 /* Renders an individual project */
-export default function ProjectCard(props) {
+export default function Project(props) {
   let project = props.project;
 
   return (
-    <Col md="6" className="project-card">
+    <Col md="6" className="project">
       <div className="project-bg">
         <img src={"/images/" + project.img_src} alt={project.img_src} />
         <div className="project-title">

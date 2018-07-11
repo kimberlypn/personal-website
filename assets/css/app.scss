@@ -70,12 +70,28 @@ body {
 }
 /********************************* END OF HOME ********************************/
 
+/********************************** CONTACT ***********************************/
+#contact {
+  text-align: right;
+}
+
+#contact a {
+  margin-left: 10px;
+  font-size: 30px;
+  color: #59c6bb;
+}
+
+#contact a:hover {
+  opacity: 0.5;
+}
+/******************************* END OF CONTACT *******************************/
+
 /********************************** PROJECTS **********************************/
-.project-card {
+.project {
   margin-bottom: 30px;
 }
 
-.project-card img {
+.project img {
   width: 100%;
 }
 
@@ -113,18 +129,22 @@ body {
 }
 /******************************* END OF PROJECTS ******************************/
 
-/********************************** CONTACT ***********************************/
-#contact {
+/*********************************** SKILLS ***********************************/
+.dot {
+  // Adapted from: https://www.w3schools.com/howto/howto_css_circles.asp
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.skill-name {
   text-align: right;
+  font-size: 20px;
 }
 
-#contact a {
-  margin-left: 10px;
-  font-size: 30px;
-  color: #59c6bb;
+.skill {
+  margin-bottom: 15px;
 }
-
-#contact a:hover {
-  opacity: 0.5;
-}
-/******************************* END OF CONTACT *******************************/
+/******************************* END OF SKILLS ********************************/
