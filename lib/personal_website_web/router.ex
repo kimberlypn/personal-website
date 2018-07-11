@@ -18,6 +18,8 @@ defmodule PersonalWebsiteWeb.Router do
 
     get "/", PageController, :index
     get "/projects", PageController, :index
+    get "/skills", PageController, :index
+    get "/experience", PageController, :index
   end
 
   # Other scopes may use custom stacks.

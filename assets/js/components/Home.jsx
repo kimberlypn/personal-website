@@ -6,7 +6,7 @@ export default function Home(props) {
   return (
     <div id="home">
       <Row>
-        <Col md="6">
+        <Col md="6" id="me">
           <img src="/images/me.JPG" alt="Picture of Myself" />
         </Col>
         <Col md="6">
@@ -26,7 +26,6 @@ export default function Home(props) {
               the self-empowered problem-solving techniques that this field
               demands.
             </p>
-
         </Col>
       </Row>
     </div>
