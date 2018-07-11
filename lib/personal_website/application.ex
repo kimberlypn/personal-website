@@ -8,6 +8,8 @@ defmodule PersonalWebsite.Application do
 
     # Define workers and child supervisors to be supervised
     children = [
+      # Start the Ecto repository
+      supervisor(PersonalWebsite.Repo, []),
       # Start the endpoint when the application starts
       supervisor(PersonalWebsiteWeb.Endpoint, []),
       # Start your own worker by calling: PersonalWebsite.Worker.start_link(arg1, arg2, arg3)

@@ -35,7 +35,7 @@ defmodule PersonalWebsiteWeb.Endpoint do
   plug Plug.Session,
     store: :cookie,
     key: "_personal_website_key",
-    signing_salt: "30vkKlxR"
+    signing_salt: "JVlvz4Fm"
 
   plug PersonalWebsiteWeb.Router
 

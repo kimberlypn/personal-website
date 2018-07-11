@@ -8,3 +8,12 @@ config :personal_website, PersonalWebsiteWeb.Endpoint,
 
 # Print only warnings and errors during test
 config :logger, level: :warn
+
+# Configure your database
+config :personal_website, PersonalWebsite.Repo,
+  adapter: Ecto.Adapters.Postgres,
+  username: "postgres",
+  password: "postgres",
+  database: "personal_website_test",
+  hostname: "localhost",
+  pool: Ecto.Adapters.SQL.Sandbox
