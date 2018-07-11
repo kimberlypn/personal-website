@@ -1,20 +1,19 @@
 import React from 'react';
-import { Row, Col } from 'reactstrap';
-import { Card, CardImg } from 'reactstrap';
+import { Row } from 'reactstrap';
+
+import ProjectCard from './ProjectCard';
 
 /* Renders the projects page */
 export default function Projects(props) {
-  console.log(props);
+  // Render each individual project
+  let projects = _.map(props.projects, function(pp) {
+    return <ProjectCard key={pp.id} project={pp} />;
+  });
 
   return (
     <div id="projects">
       <Row>
-        <Col md="6" className="project-card">
-          <img src="/images/shambomon.png" alt="Shambomon" />
-          <div className="project-title">
-            <p>SHAMBOMON</p>
-          </div>
-        </Col>
+        {projects}
       </Row>
     </div>
   );

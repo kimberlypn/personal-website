@@ -50,8 +50,8 @@ body {
   font-size: 30px;
 }
 
-// Display Game of Thrones comment when hovering over the tag line
 #tag-line:hover #got-ref {
+  // Display Game of Thrones comment when hovering over the tag line
   display: block;
 }
 
@@ -95,18 +95,38 @@ body {
 }
 
 .project-card:hover img {
+  // Hide the image on hover
   opacity: 0;
-    transition: .1s ease;
 }
 
 .project-card:hover {
-    transition: .5s ease;
-    background-color: #59c6bb;
+  transition: .5s ease;
+  background-color: #59c6bb;
 }
 
-// Display project title on hover
 .project-card:hover .project-title {
+  // Display project title on hover
   display: block;
   color: white;
 }
+
+.project-card {
+  margin-bottom: 30px;
+}
 /******************************* END OF PROJECTS ******************************/
+
+/********************************** CONTACT ***********************************/
+#contact {
+  text-align: right;
+}
+
+#contact a {
+  margin-left: 10px;
+  font-size: 30px;
+  color: #59c6bb;
+}
+
+#contact a:hover {
+  opacity: 0.5;
+}
+/******************************* END OF CONTACT *******************************/

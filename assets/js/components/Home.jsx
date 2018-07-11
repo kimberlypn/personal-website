@@ -1,6 +1,8 @@
 import React from 'react';
 import { Row, Col } from 'reactstrap';
 
+import Contact from './Contact';
+
 // Renders the home page
 export default function Home(props) {
   return (
@@ -26,6 +28,7 @@ export default function Home(props) {
               the self-empowered problem-solving techniques that this field
               demands.
             </p>
+            <Contact />
         </Col>
       </Row>
     </div>

@@ -2,16 +2,6 @@
 import store from './store';
 
 class TheServer {
-  dispatchAlert(text, color = "danger") {
-    store.dispatch({
-      type: 'ALERT',
-      data: {
-        color,
-        text
-      }
-    })
-  }
-
   request_projects() {
     return $.ajax("/api/v1/projects", {
       method: "get",
@@ -24,7 +14,7 @@ class TheServer {
         });
       },
       error: (resp) => {
-        this.dispatchAlert("Could not load projects");
+        alert("Could not load projects");
       }
     });
   }

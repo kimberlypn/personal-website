@@ -18,6 +18,7 @@ defmodule PersonalWebsiteWeb.ProjectView do
       collaborators: project.collaborators,
       description: project.description,
       start_date: project.start_date,
-      end_date: project.end_date}
+      end_date: project.end_date,
+      img_src: project.img_src}
   end
 end

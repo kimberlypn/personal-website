@@ -12,26 +12,10 @@ function projects(state = [], action) {
   }
 }
 
-const empty_alertMessage = {
-  text: null,
-  color: null
-}
-
-function alertMessage(state = empty_alertMessage, action) {
-  switch (action.type) {
-    case "ALERT":
-      return action.data
-    case "CLEAR_ALERT":
-      return empty_alertMessage;
-    default:
-      return state;
-  };
-}
-
 function root_reducer(state0, action) {
   // {tasks, users, form} is ES6 shorthand for
   // {tasks: tasks, users: users, form: form}
-  let reducer = combineReducers({projects, alertMessage});
+  let reducer = combineReducers({projects});
   let state1 = reducer(state0, action);
   return deepFreeze(state1);
 };
