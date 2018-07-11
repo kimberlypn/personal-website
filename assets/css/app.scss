@@ -10,6 +10,7 @@
 /***************************** SHARED ACROSS PAGES ****************************/
 body {
   font-family: 'Gidole-Regular';
+  font-size: 17px;
 }
 /************************* END OF SHARED ACROSS PAGES *************************/
 
@@ -30,6 +31,7 @@ body {
 /************************************* HOME ***********************************/
 #tag-line {
   font-size: 40px;
+  margin-bottom: 20px;
   text-align: right;
 }
 
@@ -42,6 +44,11 @@ body {
 // Display Game of Thrones comment when hovering over the tag line
 #tag-line:hover #got-ref {
   display: block;
+}
+
+#blurb {
+  font-size: 17px;
+  text-align: justify;
 }
 
 #home img {
