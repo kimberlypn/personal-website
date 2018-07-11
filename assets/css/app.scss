@@ -14,8 +14,12 @@ body {
 /************************* END OF SHARED ACROSS PAGES *************************/
 
 /********************************* NAVIGATION *********************************/
+.navbar {
+  margin-bottom: 30px;
+}
+
 .navbar-brand {
-  font-size: 40px;
+  font-size: 45px;
 }
 
 .nav-item a:hover {
@@ -24,9 +28,24 @@ body {
 /****************************** END OF NAVIGATION *****************************/
 
 /************************************* HOME ***********************************/
+#tag-line {
+  font-size: 40px;
+  text-align: right;
+}
+
+#got-ref {
+  display: none;
+  color: #59c6bb;
+  font-size: 30px;
+}
+
+// Display Game of Thrones comment when hovering over the tag line
+#tag-line:hover #got-ref {
+  display: block;
+}
+
 #home img {
-  // Width and height need to match that of Paper component
-  width: 55%;
+  width: 90%;
   height: auto;
 }
 /********************************* END OF HOME ********************************/
