@@ -28,8 +28,8 @@ body {
 }
 
 .nav-item a:hover {
-    color: #59c6bb !important;
-    opacity: 0.6;
+  color: #59c6bb !important;
+  opacity: 0.6;
 }
 /****************************** END OF NAVIGATION *****************************/
 
@@ -69,3 +69,44 @@ body {
   text-align: center;
 }
 /********************************* END OF HOME ********************************/
+
+/********************************** PROJECTS **********************************/
+.project-card {
+  // Fit as much as can fit into the card to evenly size everything
+  height: 300px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.project-card img {
+  width: 100%;
+}
+
+.project-title {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.project-card p {
+  font-size: 30px;
+}
+
+.project-card:hover img {
+  opacity: 0;
+    transition: .1s ease;
+}
+
+.project-card:hover {
+    transition: .5s ease;
+    background-color: #59c6bb;
+}
+
+// Display project title on hover
+.project-card:hover .project-title {
+  display: block;
+  color: white;
+}
+/******************************* END OF PROJECTS ******************************/
