@@ -35,6 +35,23 @@ class TheServer {
       }
     });
   }
+
+  request_experiences() {
+    return $.ajax("/api/v1/experiences", {
+      method: "get",
+      dataType: "json",
+      contentType: "application/json; charset=UTF-8",
+      success: (resp) => {
+        store.dispatch({
+          type: 'EXPERIENCES_LIST',
+          experiences: resp.data,
+        });
+      },
+      error: (resp) => {
+        alert("Could not load experiences");
+      }
+    });
+  }
 }
 
 export default new TheServer();

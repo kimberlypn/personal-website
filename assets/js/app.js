@@ -26,7 +26,9 @@ import run from "./components/PersonalWebsite";
 $(function() {
   api.request_projects().then(
     () => api.request_skills().then(
-      run(store)
+      () => api.request_experiences().then(
+        run(store)
+      )
     )
   );
 });

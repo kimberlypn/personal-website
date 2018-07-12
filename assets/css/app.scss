@@ -31,6 +31,10 @@ body {
   color: #59c6bb !important;
   opacity: 0.6;
 }
+
+.nav-item .active>a {
+  color: #59c6bb !important;
+}
 /****************************** END OF NAVIGATION *****************************/
 
 /************************************* HOME ***********************************/
@@ -152,6 +156,30 @@ body {
   color: #59c6bb;
 }
 /******************************* END OF SKILLS ********************************/
+
+/********************************* EXPERIENCE *********************************/
+.experience {
+  margin-bottom: 20px;
+}
+
+.experience-position {
+  color: #59c6bb;
+}
+
+.experience-company-bg {
+  background-color: #59c6bb;
+  color: white;
+  text-align: center;
+}
+
+.experience-details {
+  text-align: center;
+}
+
+.experience-tasks p {
+  margin: 0 0 0 0;
+}
+/****************************** END OF EXPERIENCE *****************************/
 
 /*********************************** FOOTER ***********************************/
 footer {

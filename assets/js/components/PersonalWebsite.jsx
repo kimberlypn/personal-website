@@ -21,7 +21,10 @@ let PersonalWebsite = connect((state) => state)((props) => {
     <Router>
       <div className="container-fluid">
         <Navigation />
-        <Main projects={props.projects} skills={props.skills}/>
+        <Main
+          projects={props.projects}
+          skills={props.skills}
+          experiences={props.experiences} />
         <Footer />
       </div>
     </Router>

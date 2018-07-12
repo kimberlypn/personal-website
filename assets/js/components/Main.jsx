@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Home from './Home';
 import Projects from './Projects';
 import Skills from './Skills';
-import Experience from './Experience';
+import Experiences from './Experiences';
 
 /* Renders each page */
 export default function Main(props) {
@@ -20,7 +20,7 @@ export default function Main(props) {
         <Skills skills={props.skills} />
       } />
       <Route path="/experience" exact={true} render={() =>
-        <Experience />
+        <Experiences experiences={props.experiences} />
       } />
     </Fragment>
   );

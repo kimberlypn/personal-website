@@ -22,10 +22,20 @@ function skills(state = [], action) {
   }
 }
 
+/* List of experiences */
+function experiences(state = [], action) {
+  switch (action.type) {
+    case 'EXPERIENCES_LIST':
+      return [...action.experiences];
+    default:
+      return state;
+  }
+}
+
 function root_reducer(state0, action) {
   // {tasks, users, form} is ES6 shorthand for
   // {tasks: tasks, users: users, form: form}
-  let reducer = combineReducers({projects, skills});
+  let reducer = combineReducers({projects, skills, experiences});
   let state1 = reducer(state0, action);
   return deepFreeze(state1);
 };

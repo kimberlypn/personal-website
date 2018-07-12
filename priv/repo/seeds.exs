@@ -14,6 +14,7 @@ defmodule Seeds do
   alias PersonalWebsite.Repo
   alias PersonalWebsite.Projects.Project
   alias PersonalWebsite.Skills.Skill
+  alias PersonalWebsite.Experiences.Experience
 
   def insert_projects do
     Repo.delete_all(Project)
@@ -137,9 +138,52 @@ defmodule Seeds do
     })
   end
 
+  def insert_experiences do
+    Repo.delete_all(Experience)
+
+    Repo.insert!(%Experience{
+      company: "MCPHS University",
+      position: "Application Developer",
+      location: "Boston",
+      description: "- Automated process of uploading thousands of students’ test scores to Salesforce
+      - Generated reports for admissions and housing departments using SQL and PowerBuilder and optimized existing SQL scripts to improve performance in report database
+      - Cleaned stale data on Salesforce and maintained documents to ensure synchronization across applications daily
+      - Assisted senior .NET developer in automating student refund service using WinAutomation",
+      start_date: ~D[2017-01-04],
+      end_date: ~D[2017-08-31]
+    })
+    Repo.insert!(%Experience{
+      company: "Northeastern University",
+      position: "Data Administrator",
+      location: "Boston",
+      description: "- Pioneered development of annotatable database of all the drawings in Henry David Thoreau’s journal
+      - Collaborated with team of 12 in data entry and data cleaning",
+      start_date: ~D[2016-09-01],
+      end_date: ~D[2016-12-07]
+    })
+    Repo.insert!(%Experience{
+      company: "Northeastern University",
+      position: "Community Learning Space (CLS) Leader",
+      location: "Boston",
+      description: "- Supervised and tutored first-year college scholars on various coursework across disciplines",
+      start_date: ~D[2015-09-01],
+      end_date: ~D[2017-12-07]
+    })
+    Repo.insert!(%Experience{
+      company: "Tufts Medical Center",
+      position: "Pulmonary/Rheumatology Department Intern",
+      location: "Boston",
+      description: "- Oversaw transition of over 100 patient documents from hard copies to electronic
+      - Coordinated up to 15 patient appointments each day",
+      start_date: ~D[2012-07-01],
+      end_date: ~D[2012-08-24]
+    })
+  end
+
   def run do
     insert_projects()
     insert_skills()
+    insert_experiences()
   end
 
   def seed(:dev) do

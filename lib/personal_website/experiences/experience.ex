@@ -1,26 +1,24 @@
-defmodule PersonalWebsite.Projects.Project do
+defmodule PersonalWebsite.Experiences.Experience do
   use Ecto.Schema
   import Ecto.Changeset
 
 
-  schema "projects" do
-    field :collaborators, :string
+  schema "experiences" do
+    field :company, :string
     field :description, :string
     field :end_date, :date
-    field :language, :string
+    field :location, :string
+    field :position, :string
     field :start_date, :date
-    field :title, :string
-    field :type, :string
-    field :img_src, :string
 
     timestamps()
   end
 
   @doc false
-  def changeset(project, attrs) do
-    project
-    |> cast(attrs, [:title, :language, :type, :collaborators, :description, :start_date, :end_date, :img_src])
-    |> validate_required([:title, :language, :type, :collaborators, :start_date, :end_date, :img_src])
+  def changeset(experience, attrs) do
+    experience
+    |> cast(attrs, [:company, :position, :location, :description, :start_date, :end_date])
+    |> validate_required([:company, :position, :location, :description, :start_date, :end_date])
     |> validate_dates()
   end
 
