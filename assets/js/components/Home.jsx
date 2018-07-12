@@ -3,7 +3,7 @@ import { Row, Col } from 'reactstrap';
 
 import Contact from './Contact';
 
-// Renders the home page
+/* Renders the home page */
 export default function Home(props) {
   return (
     <div className="container-fluid" id="home">

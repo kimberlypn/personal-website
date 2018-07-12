@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import {
   Collapse,
   Navbar,
@@ -8,7 +8,7 @@ import {
   NavItem,
   NavLink } from 'reactstrap';
 
-/* Template adapted from: https://reactstrap.github.io/components/navbar/ */
+/* Renders the navigation bar */
 export default class Navigation extends React.Component {
   constructor(props) {
     super(props);
@@ -27,7 +27,8 @@ export default class Navigation extends React.Component {
 
   render() {
     return (
-      <div>
+      <Fragment>
+        {/* Template adapted from: https://reactstrap.github.io/components/navbar/ */}
         <Navbar light expand="md">
           <NavbarBrand href="/">KIMBERLY NGUYEN</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
@@ -45,7 +46,7 @@ export default class Navigation extends React.Component {
             </Nav>
           </Collapse>
         </Navbar>
-      </div>
+      </Fragment>
     );
   }
 }

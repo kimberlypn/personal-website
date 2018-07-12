@@ -132,8 +132,8 @@ body {
 /*********************************** SKILLS ***********************************/
 .dot {
   // Adapted from: https://www.w3schools.com/howto/howto_css_circles.asp
-  height: 25px;
-  width: 25px;
+  height: 18px;
+  width: 18px;
   border-radius: 50%;
   display: inline-block;
   margin-right: 5px;
@@ -141,10 +141,20 @@ body {
 
 .skill-name {
   text-align: right;
-  font-size: 20px;
+  font-size: 17px;
 }
 
 .skill {
   margin-bottom: 15px;
 }
+
+.MuiExpansionPanelSummary-content-35:hover {
+  color: #59c6bb;
+}
 /******************************* END OF SKILLS ********************************/
+
+/*********************************** FOOTER ***********************************/
+footer {
+  font-size: 13px;
+}
+/******************************* END OF FOOTER ********************************/

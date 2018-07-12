@@ -1,10 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider, connect } from 'react-redux';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 import Navigation from './Navigation';
 import Main from './Main';
+import Footer from './Footer';
 
 export default function run(store) {
   ReactDOM.render(
@@ -21,6 +22,7 @@ let PersonalWebsite = connect((state) => state)((props) => {
       <div className="container-fluid">
         <Navigation />
         <Main projects={props.projects} skills={props.skills}/>
+        <Footer />
       </div>
     </Router>
   );

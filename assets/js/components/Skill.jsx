@@ -17,8 +17,9 @@ export default function Skill(props) {
     );
   }
 
-  // Render missing proficiency points (out of 10) as grey
-  for (var i = 0; i < 10 - skill.proficiency; i++) {
+  // Render missing proficiency points (out of 10) as grey;
+  // start at 10 to avoid having duplicate keys
+  for (var i = 10; i > skill.proficiency; i--) {
     proficiency.push(
       <span
         key={i}
@@ -30,8 +31,8 @@ export default function Skill(props) {
 
   return (
     <Row className="skill">
-      <Col md="2" className="skill-name">{skill.name.toUpperCase()}</Col>
-      <Col md="10">
+      <Col md="5" className="skill-name">{skill.name.toUpperCase()}</Col>
+      <Col md="7">
         {proficiency}
       </Col>
     </Row>

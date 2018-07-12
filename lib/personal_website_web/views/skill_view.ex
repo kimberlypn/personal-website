@@ -13,6 +13,7 @@ defmodule PersonalWebsiteWeb.SkillView do
   def render("skill.json", %{skill: skill}) do
     %{id: skill.id,
       name: skill.name,
-      proficiency: skill.proficiency}
+      proficiency: skill.proficiency,
+      category: skill.category}
   end
 end

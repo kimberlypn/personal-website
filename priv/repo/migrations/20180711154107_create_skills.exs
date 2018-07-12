@@ -5,6 +5,7 @@ defmodule PersonalWebsite.Repo.Migrations.CreateSkills do
     create table(:skills) do
       add :name, :string, null: false
       add :proficiency, :integer, null: false, default: 0
+      add :category, :string, null: false
 
       timestamps()
     end

@@ -6,7 +6,7 @@ import Projects from './Projects';
 import Skills from './Skills';
 import Experience from './Experience';
 
-// Renders the dashboard and new task form
+/* Renders each page */
 export default function Main(props) {
   return (
     <Fragment>

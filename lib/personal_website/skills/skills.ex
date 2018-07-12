@@ -18,7 +18,9 @@ defmodule PersonalWebsite.Skills do
 
   """
   def list_skills do
-    Repo.all(Skill)
+    Repo.all(from s in Skill,
+      order_by: [asc: :name]
+    )
   end
 
   @doc """

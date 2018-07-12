@@ -1,4 +1,4 @@
-/* Template source: http://www.ccs.neu.edu/home/ntuck/courses/2018/01/cs4550/notes/20-redux/notes.html */
+/* Template adapted from: http://www.ccs.neu.edu/home/ntuck/courses/2018/01/cs4550/notes/20-redux/notes.html */
 import { createStore, combineReducers } from 'redux';
 import deepFreeze from 'deep-freeze';
 
