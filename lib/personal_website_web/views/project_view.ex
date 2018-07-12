@@ -13,12 +13,15 @@ defmodule PersonalWebsiteWeb.ProjectView do
   def render("project.json", %{project: project}) do
     %{id: project.id,
       title: project.title,
+      headline: project.headline,
       language: project.language,
+      technology: project.technology,
       type: project.type,
       collaborators: project.collaborators,
       description: project.description,
       start_date: project.start_date,
       end_date: project.end_date,
-      img_src: project.img_src}
+      img_src: project.img_src,
+      github: project.github}
   end
 end

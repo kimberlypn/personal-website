@@ -21,30 +21,43 @@ defmodule Seeds do
 
     Repo.insert!(%Project{
       title: "Shambomon",
+      headline: "A two-player game inspired by the two classics: Roshambo
+        (\"Rock-Paper-Scissors\") and Pokémon",
       language: "Elixir",
+      technology: "Elixir, Phoenix, HTML, CSS, JavaScript, React, PostgreSQL,
+        Node.js",
       type: "Class",
       collaborators: "Kimberly Nguyen, Matt Dang",
       start_date: ~D[2018-02-20],
       end_date: ~D[2018-03-27],
-      img_src: "shambomon.png"
+      img_src: "shambomon.png",
+      github: "https://github.com/kimberlypn/Shambomon"
     })
     Repo.insert!(%Project{
       title: "Goat Jumper",
+      headline: "An endless platformer where the goal is to survive for as long
+        as possible",
       language: "C++",
+      technology: "C++, SDL2, Box2D",
       type: "Class",
       collaborators: "Kimberly Nguyen, Max Mindel, Jason Fiammetta, Jerry Leung",
       start_date: ~D[2018-01-30],
       end_date: ~D[2018-04-17],
-      img_src: "goat-jumper.png"
+      img_src: "goat-jumper.png",
+      github: "https://github.com/kimberlypn/GoatJumper"
     })
     Repo.insert!(%Project{
       title: "TravelPal",
+      headline: "A social flights application",
       language: "Elixir",
+      technology: "Elixir, Phoenix, HTML, CSS, JavaScript, React, Redux,
+        PostgreSQL, Node.js",
       type: "Class",
       collaborators: "Kimberly Nguyen, Longsheng Lin, Matt Dang, William Guo",
       start_date: ~D[2018-03-27],
       end_date: ~D[2018-04-20],
-      img_src: "travelpal.png"
+      img_src: "travelpal.png",
+      github: "https://github.com/kimberlypn/TravelPal"
     })
   end
 

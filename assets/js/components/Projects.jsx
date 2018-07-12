@@ -9,10 +9,7 @@ export default function Projects({projects, update}) {
   // Render each individual project
   let projs = _.map(projects, function(pp) {
     return (
-      <Project
-        key={pp.id}
-        project={pp}
-        update={update} />
+      <Project key={pp.id} project={pp} />
     );
   });
 

@@ -1,10 +1,9 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Row, Col } from 'reactstrap';
 
 /* Renders an individual experience */
-export default function Experience(props) {
-  let experience = props.experience;
-
+export default function Experience({experience}) {
   // Stylizes the start and end dates
   let start_date = experience.start_date;
   let end_date = experience.end_date;
@@ -70,3 +69,7 @@ export default function Experience(props) {
     </div>
   );
 }
+
+Experience.propTypes = {
+  experience: PropTypes.object.isRequired
+};

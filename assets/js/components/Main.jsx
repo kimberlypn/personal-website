@@ -11,10 +11,8 @@ import ProjectDetails from './ProjectDetails';
 /* Renders each page */
 export default function Main({
   projects,
-  projectDetails,
   skills,
-  experiences,
-  actions }) {
+  experiences }) {
 
   return (
     <Fragment>
@@ -22,12 +20,14 @@ export default function Main({
           <Home />
       } />
       <Route path="/projects" exact={true} render={() =>
-        <Projects
-          projects={projects}
-          update={actions.updateProject} />
+        <Projects projects={projects} />
       } />
-      <Route path="/projects/:id(\d+)" exact={true} render={() =>
-          <ProjectDetails project={projectDetails} />
+      <Route path="/projects/:id(\d+)" exact={true} render={({match}) =>
+          <ProjectDetails
+            project={
+              _.find(projects, function(pp) {
+                return pp.id == match.params.id;
+              })} />
         } />
       <Route path="/skills" exact={true} render={() =>
         <Skills skills={skills} />
@@ -41,7 +41,6 @@ export default function Main({
 
 Main.propTypes = {
   projects: PropTypes.array.isRequired,
-  projectDetails: PropTypes.object.isRequired,
   skills: PropTypes.array.isRequired,
   experiences: PropTypes.array.isRequired
 };

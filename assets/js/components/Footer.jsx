@@ -1,7 +1,7 @@
 import React from 'react';
 
 /* Renders the footer */
-export default function Footer(props) {
+export default function Footer() {
   return (
     <footer>
       <div className="text-center py-4">
