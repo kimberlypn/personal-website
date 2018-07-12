@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import ReactDOM from 'react-dom';
 import { Provider, connect } from 'react-redux';
 import { BrowserRouter as Router } from 'react-router-dom';
@@ -18,15 +18,17 @@ export default function run(store) {
 
 let PersonalWebsite = connect((state) => state)((props) => {
   return (
-    <Router>
-      <div className="container-fluid">
-        <Navigation />
-        <Main
-          projects={props.projects}
-          skills={props.skills}
-          experiences={props.experiences} />
-        <Footer />
-      </div>
-    </Router>
+    <Fragment>
+      <Navigation />
+      <Router>
+        <div className="container-fluid" id="index">
+          <Main
+            projects={props.projects}
+            skills={props.skills}
+            experiences={props.experiences} />
+          <Footer />
+        </div>
+      </Router>
+    </Fragment>
   );
 });

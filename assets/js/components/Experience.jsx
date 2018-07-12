@@ -40,29 +40,31 @@ export default function Experience(props) {
   var parsed_desc = [];
   // Put a new line after each point, skipping the first entry which is null
   for (var i = 1; i < description.length; i++) {
-    parsed_desc.push(<p key={i}>{'• ' + description[i]}<br /></p>)
+    parsed_desc.push(<li key={i}>{description[i]}</li>)
   }
 
   return (
     <div className="container-fluid" className="experience">
       <Row>
-        <Col md="3" className="experience-company">
-          <div className="experience-company-bg">
+        <Col md="3">
+          <Col md="12" className="experience-company">
             {experience.company}
-          </div>
+          </Col>
+          <Col md="12" className="experience-details">
+            [{range} | {experience.location}]
+          </Col>
         </Col>
-        <Col md="1"></Col>
-        <Col md="8" className="experience-position">
-          {experience.position}
+        <Col md="1">
         </Col>
-      </Row>
-      <Row>
-        <Col md="3" className="experience-details">
-          [{range} | {experience.location}]
-        </Col>
-        <Col md="1"></Col>
-        <Col md="8" className="experience-tasks">
-          {parsed_desc}
+        <Col md="8">
+          <Col md="12" className="experience-position">
+            {experience.position}
+          </Col>
+          <Col md="12" className="experience-tasks">
+            <ul>
+              {parsed_desc}
+            </ul>
+          </Col>
         </Col>
       </Row>
     </div>
