@@ -18,7 +18,9 @@ defmodule PersonalWebsite.Experiences do
 
   """
   def list_experiences do
-    Repo.all(Experience)
+    Repo.all(from e in Experience,
+      order_by: [desc: :start_date]
+    )
   end
 
   @doc """
