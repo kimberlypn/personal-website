@@ -17,15 +17,25 @@ export default function run(store) {
 };
 
 let PersonalWebsite = connect((state) => state)((props) => {
+  function updateProject(project) {
+    props.dispatch({
+      type: 'UPDATE_PROJECT',
+      data: project
+    });
+  }
+
+  const actions = {
+    updateProject
+  }
+
   return (
     <Fragment>
       <Navigation />
       <Router>
         <div className="container-fluid" id="index">
           <Main
-            projects={props.projects}
-            skills={props.skills}
-            experiences={props.experiences} />
+            {...props}
+            actions={actions} />
           <Footer />
         </div>
       </Router>

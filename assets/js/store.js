@@ -12,6 +12,28 @@ function projects(state = [], action) {
   }
 }
 
+/* Details of an individual project to be displayed on its corresponding page */
+let empty_project = {
+  id: "",
+  title: "",
+  language: "",
+  type: "",
+  collaborators: "",
+  description: "",
+  start_date: "",
+  end_date: "",
+  img_src: ""
+}
+
+function projectDetails(state = empty_project, action) {
+  switch (action.type) {
+    case 'UPDATE_PROJECT':
+      return Object.assign({}, state, action.data);
+    default:
+      return state;
+  }
+}
+
 /* List of skills */
 function skills(state = [], action) {
   switch (action.type) {
@@ -35,7 +57,12 @@ function experiences(state = [], action) {
 function root_reducer(state0, action) {
   // {tasks, users, form} is ES6 shorthand for
   // {tasks: tasks, users: users, form: form}
-  let reducer = combineReducers({projects, skills, experiences});
+  let reducer = combineReducers({
+    projects,
+    projectDetails,
+    skills,
+    experiences
+  });
   let state1 = reducer(state0, action);
   return deepFreeze(state1);
 };

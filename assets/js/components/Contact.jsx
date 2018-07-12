@@ -16,7 +16,7 @@ export default function Contact(props) {
           </a>
           <a href="https://www.linkedin.com/in/kimberlypn/">
             {/* Icon source: https://fontawesome.com/icons/linkedin?style=brands */}
-            <i class="fab fa-linkedin"></i>
+            <i className="fab fa-linkedin"></i>
           </a>
         </Col>
       </Row>

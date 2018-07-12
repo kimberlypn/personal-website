@@ -54,12 +54,11 @@ ul {
   opacity: 0.6;
 }
 
-.nav-item a:hover {
-  color: #59c6bb !important;
-  opacity: 0.6;
+.navbar-nav > .active > a {
+  color: #59c6bb;
 }
 
-.nav-item .active>a {
+.nav-item > a:hover {
   color: #59c6bb !important;
 }
 /****************************** END OF NAVIGATION *****************************/
