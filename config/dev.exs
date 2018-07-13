@@ -48,7 +48,6 @@ config :logger, :console, format: "[$level] $message\n"
 # in production as building large stacktraces may be expensive.
 config :phoenix, :stacktrace_depth, 20
 
-# Configure your database
 config :personal_website, PersonalWebsite.Repo,
   adapter: Ecto.Adapters.Postgres,
   username: "personal_website",
