@@ -24,6 +24,7 @@ export default function Main({
       } />
       <Route path="/projects/:id(\d+)" exact={true} render={({match}) =>
           <ProjectDetails
+            projects={projects}
             project={
               _.find(projects, function(pp) {
                 return pp.id == match.params.id;

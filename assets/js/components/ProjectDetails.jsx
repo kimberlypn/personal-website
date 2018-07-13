@@ -8,7 +8,7 @@ import TravelPal from './TravelPal';
 import GoatJumper from './GoatJumper';
 
 /* Renders the details page for an individual project */
-export default function ProjectDetails({project}) {
+export default function ProjectDetails({projects, project}) {
   // TODO: Figure out a cleaner way to customize project descriptions
   var summaries = {};
 
@@ -30,10 +30,45 @@ export default function ProjectDetails({project}) {
     );
   }
 
+  // Returns the index of this project in the projects array
+  function getIndex() {
+    return _.map(projects, function(pp) {
+      return pp.id;
+    }).indexOf(project.id);
+  }
+
+  // Returns the id of the next project
+  function getNext() {
+    let curr = getIndex();
+
+    // Wrap around if this is the last project in the array
+    if (curr == projects.length - 1)
+      return projects[0].id;
+    else
+      return projects[curr + 1].id;
+  }
+
+  // Returns the id of the previous project
+  function getPrev() {
+    let curr = getIndex();
+
+    // Wrap around if this is the first project in the array
+    if (curr == 0)
+      return projects[projects.length - 1].id;
+    else
+      return projects[curr - 1].id;
+  }
+
   return (
     <div className="container-fluid project-page">
       <Row>
-        <Col md="2"></Col>
+        <Col md="2" className="project-arrows">
+          <Tooltip id="tooltip-icon" title="Previous">
+            <a href={"/projects/" + getPrev()}>
+              <i className="fas fa-chevron-circle-left"></i>
+            </a>
+          </Tooltip>
+        </Col>
         <Col md="8">
           <h1>{project.title}</h1>
           <p className="project-headline">{project.headline}</p>
@@ -55,12 +90,19 @@ export default function ProjectDetails({project}) {
             </Tooltip>
           </div>
         </Col>
-        <Col md="2"></Col>
+        <Col md="2" className="project-arrows">
+          <Tooltip id="tooltip-icon" title="Next">
+            <a href={"/projects/" + getNext()}>
+              <i className="fas fa-chevron-circle-right"></i>
+            </a>
+          </Tooltip>
+        </Col>
       </Row>
     </div>
   );
 }
 
 ProjectDetails.propTypes = {
+  projects: PropTypes.array.isRequired,
   project: PropTypes.object.isRequired
 };
