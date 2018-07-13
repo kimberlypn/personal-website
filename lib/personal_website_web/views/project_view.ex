@@ -18,10 +18,9 @@ defmodule PersonalWebsiteWeb.ProjectView do
       technology: project.technology,
       type: project.type,
       collaborators: project.collaborators,
-      description: project.description,
       start_date: project.start_date,
       end_date: project.end_date,
       img_src: project.img_src,
-      github: project.github}
+      repo: project.repo}
   end
 end

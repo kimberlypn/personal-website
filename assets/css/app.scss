@@ -40,7 +40,7 @@ ul {
   padding-left: 20px;
 }
 
-a {
+a, .fab {
   color: #59c6bb;
 }
 
@@ -188,6 +188,12 @@ a:hover {
 .project-section {
   margin-bottom: 30px;
   text-align: justify;
+}
+
+.repo-icon {
+  text-align: center;
+  font-size: 50px;
+  cursor: pointer;
 }
 /******************************* END OF PROJECTS ******************************/
 

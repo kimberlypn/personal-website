@@ -31,7 +31,7 @@ defmodule Seeds do
       start_date: ~D[2018-02-20],
       end_date: ~D[2018-03-27],
       img_src: "shambomon.png",
-      github: "https://github.com/kimberlypn/Shambomon"
+      repo: "https://github.com/kimberlypn/Shambomon"
     })
     Repo.insert!(%Project{
       title: "Goat Jumper",
@@ -44,7 +44,7 @@ defmodule Seeds do
       start_date: ~D[2018-01-30],
       end_date: ~D[2018-04-17],
       img_src: "goat-jumper.png",
-      github: "https://github.com/kimberlypn/GoatJumper"
+      repo: "https://github.com/kimberlypn/GoatJumper"
     })
     Repo.insert!(%Project{
       title: "TravelPal",
@@ -57,7 +57,7 @@ defmodule Seeds do
       start_date: ~D[2018-03-27],
       end_date: ~D[2018-04-20],
       img_src: "travelpal.png",
-      github: "https://github.com/kimberlypn/TravelPal"
+      repo: "https://github.com/kimberlypn/TravelPal"
     })
   end
 
