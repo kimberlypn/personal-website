@@ -1,26 +1,24 @@
 import React from 'react';
 import { Row, Col } from 'reactstrap';
 
-import Header from './Header';
-
-// Renders the "Contact" section
+/* Renders the contact page */
 export default function Contact(props) {
   return (
-    <div className="container-fluid section" id="contact">
-      <Header text="Contact" icon={<i className="fas fa-envelope"></i>} />
-      <Row>
+      <Row id="contact">
         <Col md="12">
           <a href="mailto:nguyen.kp96@gmail.com">
+            {/* Icon source: https://fontawesome.com/icons/envelope?style=solid */}
             <i className="fas fa-envelope"></i>
           </a>
           <a href="https://github.com/kimberlypn">
+            {/* Icon source: https://fontawesome.com/icons/github?style=brands */}
             <i className="fab fa-github"></i>
           </a>
           <a href="https://www.linkedin.com/in/kimberlypn/">
-            <i class="fab fa-linkedin"></i>
+            {/* Icon source: https://fontawesome.com/icons/linkedin?style=brands */}
+            <i className="fab fa-linkedin"></i>
           </a>
         </Col>
       </Row>
-    </div>
   );
 }

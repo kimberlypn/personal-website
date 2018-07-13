@@ -1,35 +1,31 @@
 import React, { Fragment } from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { Provider, connect } from 'react-redux';
+import { BrowserRouter as Router } from 'react-router-dom';
 
-import BackToTop from './BackToTop';
-import Home from './Home';
-import About from './About';
-import Coursework from './Coursework';
-import Projects from './Projects';
-import Contact from './Contact';
+import Navigation from './Navigation';
+import Main from './Main';
+import Footer from './Footer';
 
-export default function run(root) {
-  ReactDOM.render(<PersonalWebsite />, root);
-}
+export default function run(store) {
+  ReactDOM.render(
+    <Provider store={store}>
+      <PersonalWebsite state={store.getState()} />
+    </Provider>,
+    document.getElementById('root')
+  );
+};
 
-class PersonalWebsite extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
-  render() {
-    return (
+let PersonalWebsite = connect((state) => state)((props) => {
+  return (
+    <Fragment>
+      <Navigation />
       <Router>
-        <Fragment>
-          <Home />
-          <About />
-          <Coursework />
-          <Projects />
-          <Contact />
-          <BackToTop />
-        </Fragment>
+        <div className="container-fluid" id="index">
+          <Main {...props} />
+          <Footer />
+        </div>
       </Router>
-    );
-  }
-}
+    </Fragment>
+  );
+});

@@ -2,254 +2,257 @@
 
 /*********************************** FONTS ************************************/
 @font-face {
-  font-family: 'Shorelines Script Bold';
-  src: url('/fonts/Shorelines Script Bold.otf');
-}
-
-@font-face {
-  font-family: 'BEBAS';
-  src: url('/fonts/BEBAS.ttf');
-}
-
-@font-face {
-  font-family: 'PT_Sans-Narrow-Web-Regular';
-  src: url('/fonts/PT_Sans-Narrow-Web-Regular.ttf');
-}
-
-@font-face {
-  font-family: 'PT_Sans-Narrow-Web-Bold';
-  src: url('/fonts/PT_Sans-Narrow-Web-Bold.ttf');
+  font-family: 'Gidole-Regular';
+  src: url('/fonts/Gidole-Regular.ttf');
 }
 /******************************** END OF FONTS ********************************/
 
 /***************************** SHARED ACROSS PAGES ****************************/
 body {
-  background: url('/images/bg.jpeg');
-  color: #5b5e5d;
-  position: relative;
-  font-family: 'PT_Sans-Narrow-Web-Regular';
+  font-family: 'Gidole-Regular';
+  font-size: 17px;
 }
 
-p {
-  font-family: 'PT_Sans-Narrow-Web-Regular';
+/* Animation source: https://fabriceleven.com/design/creating-fancy-css3-fade-in-animations-on-page-load/ */
+@-webkit-keyframes fade-in { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fade-in { from { opacity:0; } to { opacity:1; } }
+@keyframes fade-in { from { opacity:0; } to { opacity:1; } }
+
+#index {
+  // Make things invisible upon start
+  opacity: 0;
+  // Call our keyframe named fade-in, use animattion ease-in and repeat it only 1 time
+  -webkit-animation: fade-in ease-in 1;
+  -moz-animation: fade-in ease-in 1;
+  animation: fade-in ease-in 1;
+
+  // This makes sure that after animation is done we remain at the last keyframe value (opacity: 1)
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+
+  -webkit-animation-duration:0.7s;
+  -moz-animation-duration:0.7s;
+  animation-duration:0.7s;
 }
 
-p b {
-  font-family: 'PT_Sans-Narrow-Web-Bold';
+ul {
+  padding-left: 20px;
 }
 
-h1 {
-  font-family: 'BEBAS';
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-right: 10px;
-  background-color: #3585a8;
-  color: white;
-  cursor: default;
+a, .fab {
+  color: #59c6bb;
 }
 
-h1 .fas {
-  font-size: 50px;
-  margin-right: 10px;
-  margin-left: 10px;
-}
-
-.section {
-  margin-top: 30px;
-  height: 100%;
-}
-
-.card {
-  margin-top: 40px;
-  font-size: 18px;
+a:hover {
+  color: #59c6bb;
+  opacity: 0.7;
 }
 /************************* END OF SHARED ACROSS PAGES *************************/
 
 /********************************* NAVIGATION *********************************/
-.nav {
-  width: 100%;
-  margin-top: 20px;
-  text-align: center;
+.navbar {
+  margin-bottom: 30px;
 }
 
-.nav-item {
-  width: 25%;
+.navbar-brand {
+  font-size: 45px;
 }
 
-.nav-link {
-  color: #5b5e5d;
+.navbar-brand:hover {
+  opacity: 0.6;
 }
 
-.nav-link:hover {
-  opacity: 0.7;
-  cursor: pointer;
-  color: #5b5e5d;
-}
-
-.nav-link p {
-  text-transform: uppercase;
-  margin-top: 5px;
-  font-size: 20px;
-}
-
-.nav-link .fas {
-  font-size: 30px;
-  color: #72b2a9;
+.nav-item a:hover {
+  color: #59c6bb !important;
 }
 /****************************** END OF NAVIGATION *****************************/
 
-/*********************************** FOOTER ***********************************/
-.footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
+/************************************* HOME ***********************************/
+#tag-line {
+  font-size: 40px;
+  margin-bottom: 20px;
   text-align: right;
 }
 
-.footer img {
-  width: 60px;
-  height: 60px;
-  margin-right: 10px;
-  margin-bottom: 10px;
+#tag-line p {
+  cursor: default;
 }
 
-.footer img:hover {
-  opacity: 0.7;
-}
-/******************************** END OF FOOTER *******************************/
-
-/************************************* HOME ***********************************/
-#home {
-  margin-top: 70px;
+#got-ref {
+  display: none;
+  color: #59c6bb;
+  font-size: 30px;
 }
 
-#home h1 {
-  font-family: 'Shorelines Script Bold';
-  font-size: 50px;
-  margin-bottom: 40px;
-  color: #484949;
-  text-align: center;
-  background-color: transparent;
+#tag-line:hover #got-ref {
+  // Display Game of Thrones comment when hovering over the tag line
+  display: block;
+}
+
+#blurb {
+  font-size: 17px;
+  text-align: justify;
 }
 
 #home img {
-  // Width and height need to match that of Paper component
-  width: 100%;
+  width: 90%;
   height: auto;
-  border-radius: 50%;
+}
+
+#me {
+  text-align: center;
 }
 /********************************* END OF HOME ********************************/
 
-/************************************* ABOUT **********************************/
-#about p {
-  margin-top: 40px;
-  font-size: 21px;
-  text-align: center;
-}
-
-#about span {
-  color: #72b2a9;
-}
-/********************************* END OF ABOUT *******************************/
-
-/********************************* COURSEWORK *********************************/
-#coursework h1 {
-  text-align: right;
-}
-
-#coursework .card-header, #projects .card-title {
-  font-family: 'PT_Sans-Narrow-Web-Regular';
-  background-color: #72b2a9;
-  color: white;
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 25px;
-}
-
-#coursework .card .fas, #coursework .card span {
-  color: #72b2a9;
-}
-
-#coursework .card span {
-  font-weight: bold;
-}
-
-#coursework .card-body {
-  color: #5b5e5d;
-}
-/****************************** END OF COURSEWORK *****************************/
-
-/********************************** PROJECTS **********************************/
-#projects a:hover {
-  text-decoration: none;
-  opacity: 0.8;
-}
-
-#projects .card-title {
-  color: white;
-}
-
-#projects .card-title a {
-  color: white;
-  margin-left: 15px;
-}
-
-#projects .card-text {
-  text-align: center;
-  height: 100px;
-}
-
-#projects .card-text p {
-  font-family: 'PT_Sans-Narrow-Web-Regular';
-  font-size: 18px;
-  margin-bottom: 0;
-  color: #5b5e5d;
-}
-
-#projects .card-text a, #projects #card-text-expand b {
-  color: #72b2a9;
-}
-
-#projects #card-text-expand {
-  text-align: left;
-  margin-top: 0;
-}
-
-#projects .card-media img {
-  height: 210px;
-}
-/******************************* END OF PROJECTS ******************************/
-
 /********************************** CONTACT ***********************************/
 #contact {
-  // Need to bring forward otherwise footer makes the links unclickable
-  z-index: 1;
-  position:relative;
-}
-
-#contact h1 {
   text-align: right;
-}
-
-#contact .row {
-  font-size: 60px;
-  text-align: center;
-  margin-top: 20px;
-}
-
-#contact a .fas, #contact a .fab {
-  color: #72b2a9;
 }
 
 #contact a {
-  margin-left: 30px;
-  margin-right: 30px;
+  margin-left: 10px;
+  font-size: 30px;
+  color: #59c6bb;
 }
 
 #contact a:hover {
-  opacity: 0.7;
-  color: #5b5e5d;
+  opacity: 0.5;
 }
 /******************************* END OF CONTACT *******************************/
+
+/********************************** PROJECTS **********************************/
+.project {
+  margin-bottom: 30px;
+}
+
+.project img {
+  width: 100%;
+}
+
+.project-bg {
+  // Fit as much as can fit into the card to evenly size everything
+  height: 300px;
+  overflow: hidden;
+}
+
+.project-title {
+  font-size: 30px;
+  // Center the title vertically and horizontally
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.project-bg:hover img {
+  // Hide the image on hover
+  opacity: 0;
+}
+
+.project-bg:hover {
+  // Ease in the background color on hover
+  transition: .5s ease;
+  background-color: #59c6bb;
+}
+
+.project-bg:hover .project-title {
+  // Display project title on hover
+  display: block;
+  color: white;
+}
+
+.project-page h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 65px;
+}
+
+.project-page h3 {
+  text-transform: uppercase;
+  color: #59c6bb;
+}
+
+.project-headline {
+  text-align: center;
+}
+
+.project-page img {
+  display: block;
+  margin: 20px auto;
+  width: 100%;
+  height: auto;
+}
+
+.project-section {
+  margin-bottom: 30px;
+  text-align: justify;
+}
+
+.repo-icon {
+  text-align: center;
+  font-size: 50px;
+  cursor: pointer;
+}
+
+.project-arrows {
+  text-align: center;
+  font-size: 50px;
+  color: #59c6bb;
+}
+/******************************* END OF PROJECTS ******************************/
+
+/*********************************** SKILLS ***********************************/
+.dot {
+  // Adapted from: https://www.w3schools.com/howto/howto_css_circles.asp
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.skill-name {
+  text-align: right;
+  font-size: 17px;
+}
+
+.skill {
+  margin-bottom: 15px;
+}
+
+.MuiExpansionPanelSummary-content-35:hover {
+  color: #59c6bb;
+}
+/******************************* END OF SKILLS ********************************/
+
+/********************************* EXPERIENCE *********************************/
+.experience {
+  margin-bottom: 20px;
+}
+
+.experience-position {
+  color: #59c6bb;
+}
+
+.experience-company {
+  background-color: #59c6bb;
+  color: white;
+  text-align: center;
+}
+
+.experience-details {
+  text-align: center;
+}
+
+.experience-tasks p {
+  margin: 0 0 0 0;
+}
+/****************************** END OF EXPERIENCE *****************************/
+
+/*********************************** FOOTER ***********************************/
+footer {
+  font-size: 13px;
+}
+/******************************* END OF FOOTER ********************************/

@@ -5,10 +5,14 @@
 # is restricted to this project.
 use Mix.Config
 
+# General application configuration
+config :personal_website,
+  ecto_repos: [PersonalWebsite.Repo]
+
 # Configures the endpoint
 config :personal_website, PersonalWebsiteWeb.Endpoint,
   url: [host: "localhost"],
-  secret_key_base: "v5tTDn8HNzI4/61EW/KR/5Z9zItPcTe2QeXyf4D311/SZ9OnRSCTOkakkkXkibXJ",
+  secret_key_base: "4pNVA1K6BJzfrVq+cp0Cx6UBEsW9pjoTr7pk6qatf3E90T2ZAxd0EofoGWu55OEV",
   render_errors: [view: PersonalWebsiteWeb.ErrorView, accepts: ~w(html json)],
   pubsub: [name: PersonalWebsite.PubSub,
            adapter: Phoenix.PubSub.PG2]

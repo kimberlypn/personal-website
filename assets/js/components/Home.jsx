@@ -1,39 +1,36 @@
 import React from 'react';
 import { Row, Col } from 'reactstrap';
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import Paper from 'material-ui/Paper';
 
-import Navigation from './Navigation';
+import Contact from './Contact';
 
-// Renders the home page
-export default function Home(props) {
-  // Style for the Paper component
-  const style = {
-    height: 'auto',
-    width: '100%',
-    display: 'block',
-    margin: 'auto'
-  };
-
+/* Renders the home page */
+export default function Home() {
   return (
     <div className="container-fluid" id="home">
       <Row>
-        <Col md="12">
-          <h1>Kimberly Nguyen</h1>
+        <Col md="6" id="me">
+          <img src="/images/me.JPG" alt="Picture of Myself" />
         </Col>
-      </Row>
-      <Row>
-        <Col md="3"></Col>
         <Col md="6">
-          <MuiThemeProvider>
-            <Paper style={style} zDepth={4} circle={true}>
-              <img src="/images/me.jpg" alt="Picture of Myself" />
-            </Paper>
-          </MuiThemeProvider>
+          <div id="tag-line">
+            <p>I sleep, and I code things.</p>
+            <span id="got-ref">(Yes, that was a Game of Thrones reference.)</span>
+          </div>
+            <p id="blurb">
+              Hello, world! I am a software developer with an interest in
+              technology in health care. I graduated from Northeastern
+              University with a Bachelor of Science in computer science. Before
+              pursuing a degree in CS, I was majoring in health science. While
+              I am still driven to innovate this field, I wanted to make a
+              difference doing what I enjoy: building useful applications that
+              can make people's days that much better, whether that impact be
+              big or small. I love how prevalent CS is in almost anything and
+              the self-empowered problem-solving techniques that this field
+              demands.
+            </p>
+            <Contact />
         </Col>
-        <Col md="3"></Col>
       </Row>
-      <Navigation />
     </div>
   );
 }

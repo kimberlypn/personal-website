@@ -17,10 +17,17 @@ defmodule PersonalWebsiteWeb.Router do
     pipe_through :browser # Use the default browser stack
 
     get "/", PageController, :index
+    get "/projects", PageController, :index
+    get "/projects/:id", PageController, :index
+    get "/skills", PageController, :index
+    get "/experience", PageController, :index
   end
 
   # Other scopes may use custom stacks.
-  # scope "/api", PersonalWebsiteWeb do
-  #   pipe_through :api
-  # end
+  scope "/api/v1", PersonalWebsiteWeb do
+    pipe_through :api
+    resources "/projects", ProjectController, except: [:new, :edit]
+    resources "/skills", SkillController, except: [:new, :edit]
+    resources "/experiences", ExperienceController, except: [:new, :edit]
+  end
 end
