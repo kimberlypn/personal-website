@@ -4,7 +4,7 @@ import React from 'react';
 export default function TravelPal() {
   return (
     <p>
-      This was the second of two projects for my web development class. The
+      This was the second of two projects for my Web Development class. The
       assignment was to build a complex application that uses an external web
       API from its server-side code. My team and I wanted to build something
       that was both useful and hip. So, we decided on a social flights

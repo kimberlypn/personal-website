@@ -4,7 +4,7 @@ import React from 'react';
 export default function Shambomon() {
   return (
     <p>
-      This was the first of two projects for my web development class. The
+      This was the first of two projects for my Web Development class. The
       assignment was to build a multi-player computer game with a web browser
       interface. My partner and I decided to take a simple game such as&nbsp;
       <a href="https://en.wikipedia.org/wiki/Rock%E2%80%93paper%E2%80%93scissors">Roshambo</a>

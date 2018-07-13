@@ -5,6 +5,7 @@ import Tooltip from '@material-ui/core/Tooltip';
 
 import Shambomon from './Shambomon';
 import TravelPal from './TravelPal';
+import GoatJumper from './GoatJumper';
 
 /* Renders the details page for an individual project */
 export default function ProjectDetails({project}) {
@@ -14,6 +15,7 @@ export default function ProjectDetails({project}) {
   // Add the pages for each project to the summaries dictionary
   summaries["shambomon"] = <Shambomon />;
   summaries["travelpal"] = <TravelPal />;
+  summaries["goat jumper"] = <GoatJumper />;
 
   let summary = summaries[project.title.toLowerCase()];
   var summarySection;
