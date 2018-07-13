@@ -204,7 +204,7 @@ defmodule Seeds do
   end
 
   def seed(:prod) do
-    # run()
+    run()
   end
 end
 
