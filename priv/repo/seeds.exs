@@ -112,7 +112,7 @@ defmodule Seeds do
 
     Repo.insert!(%Skill{name: "HTML5", proficiency: 10, category: "Web"})
     Repo.insert!(%Skill{name: "CSS", proficiency: 10, category: "Web"})
-    Repo.insert!(%Skill{name: "JavaScript", proficiency: 9, category: "Web"})
+    Repo.insert!(%Skill{name: "JavaScript", proficiency: 8, category: "Web"})
 
     Repo.insert!(%Skill{name: "Phoenix", proficiency: 8, category: "Framework"})
     Repo.insert!(%Skill{name: "Bootstrap", proficiency: 10, category: "Framework"})
@@ -121,7 +121,7 @@ defmodule Seeds do
     Repo.insert!(%Skill{name: "PostgreSQL", proficiency: 8, category: "Database"})
 
     Repo.insert!(%Skill{name: "React", proficiency: 9, category: "Library"})
-    Repo.insert!(%Skill{name: "jQuery", proficiency: 8, category: "Library"})
+    Repo.insert!(%Skill{name: "jQuery", proficiency: 7, category: "Library"})
     Repo.insert!(%Skill{name: "Redux", proficiency: 7, category: "Library"})
 
     Repo.insert!(%Skill{name: "Windows", proficiency: 10, category: "Systems, Software, & Tools"})
