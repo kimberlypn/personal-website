@@ -13,15 +13,15 @@ export default function PersonalSite() {
       looked like by checking out their respective GitHub repositories.<br /><br />
       I made the first website when I had just switched into CS from health
       science, so it was no surprise that after graduating, I wanted to revamp
-      the barebones-HTML-CSS-no-frameworks-not-even-Bootstrap-!!!-attempt of a
+      this barebones-HTML-CSS-no-frameworks-not-even-Bootstrap attempt of a
       website into something much more interesting.<br /><br />
-      So, I rebuilt it using the stack I had learned from my Web Development
-      class. My second attempt looked much better, but I still was not
-      completely satisfied because I wanted something more minimalistic. Off to
-      the drawing board I went, and a few weeks later, we now have this:
-      &nbsp;a single-page application (SPA) with React for the UI, Redux for
-      managing client-side application/UI state, and a Postgres database, all
-      wrapped within a Phoenix framework.
+      On my second go, I rebuilt my website using the stack I had learned from
+      my Web Development class. My second attempt looked much better, but I
+      still was not completely satisfied because I wanted something more
+      minimalistic. Off to the drawing board I went, and a few weeks later, we
+      now have this: a single-page application (SPA) with React for the UI,
+      Redux for managing client-side application/UI state, and a Postgres
+      database, all wrapped within a Phoenix framework.
     </p>
   );
 }
