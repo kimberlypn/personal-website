@@ -2,7 +2,7 @@
 
 export PORT=5101
 export MIX_ENV=prod
-export GIT_PATH=/home/personalsite/src/personalsite
+export GIT_PATH=/home/personal_website/src/personal_website
 
 PWD=`pwd`
 if [ $PWD != $GIT_PATH ]; then
@@ -11,8 +11,8 @@ if [ $PWD != $GIT_PATH ]; then
 	exit 1
 fi
 
-if [ $USER != "personalsite" ]; then
-	echo "Error: must run as user 'personalsite'"
+if [ $USER != "personal_website" ]; then
+	echo "Error: must run as user 'personal_website'"
 	echo "  Current user is $USER"
 	exit 2
 fi
@@ -27,17 +27,19 @@ mkdir -p ~/www
 mkdir -p ~/old
 
 NOW=`date +%s`
-if [ -d ~/www/personalsite ]; then
-	echo mv ~/www/personalsite ~/old/$NOW
-	mv ~/www/personalsite ~/old/$NOW
+
+if [ -d ~/www/personal_website ]; then
+	echo mv ~/www/personal_website ~/old/$NOW
+	mv ~/www/personal_website ~/old/$NOW
 fi
 
-mkdir -p ~/www/personalsite
-REL_TAR=~/src/personalsite/_build/prod/rel/personalsite/releases/0.0.1/personalsite.tar.gz
-(cd ~/www/personalsite && tar xzvf $REL_TAR)
+mkdir -p ~/www/personal_website
+REL_TAR=~/src/personal_website/_build/prod/rel/personal_website/releases/0.0.1/personal_website.tar.gz
+(cd ~/www/personal_website && tar xzvf $REL_TAR)
 
 crontab - <<CRONTAB
-@reboot bash /home/personalsite/src/personalsite/start.sh
+@reboot bash /home/personal_website/src/personal_website/start.sh
+
 CRONTAB
 
 #. start.sh

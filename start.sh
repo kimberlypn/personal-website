@@ -2,6 +2,6 @@
 
 export PORT=5101
 
-cd ~/www/personalsite
-./bin/personalsite stop || true
-./bin/personalsite start
+cd ~/www/personal_website
+./bin/personal_website stop || true
+./bin/personal_website start
