@@ -27,6 +27,7 @@ mkdir -p ~/www
 mkdir -p ~/old
 
 NOW=`date +%s`
+
 if [ -d ~/www/personal_website ]; then
 	echo mv ~/www/personal_website ~/old/$NOW
 	mv ~/www/personal_website ~/old/$NOW
@@ -38,6 +39,7 @@ REL_TAR=~/src/personal_website/_build/prod/rel/personal_website/releases/0.0.1/p
 
 crontab - <<CRONTAB
 @reboot bash /home/personal_website/src/personal_website/start.sh
+
 CRONTAB
 
 #. start.sh
