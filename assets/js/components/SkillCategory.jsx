@@ -7,7 +7,7 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 /* Renders a skill category */
 export default function SkillCategory({category, skills}) {
   // Keep the programming languages panel expanded by default
-  var expanded = category.toLowerCase() == "programming languages";
+  var expanded = category.toLowerCase() == "programming language";
 
   return (
     <Fragment>

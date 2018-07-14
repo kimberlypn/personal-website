@@ -18,14 +18,27 @@ export default function Skills({skills}) {
     });
   }
 
+  // Order the categories alphabetically
+  const orderedGroups = {};
+  Object.keys(groups).sort().forEach(function(key) {
+    orderedGroups[key] = groups[key];
+  });
+
+  // Build the SkillCategory component for each category
+  let categories = [];
+  Object.keys(orderedGroups).forEach(function(key, i) {
+    // Skip programming language category so that I can hardcode it to be first
+    if (key != "programming language") {
+      categories.push(
+        <SkillCategory key={i} category={key} skills={orderedGroups[key]} />
+      );
+    }
+  });
+
   return (
     <div className="container-fluid" id="skills">
-      <SkillCategory category="Programming Languages" skills={groups["programming language"]} />
-      <SkillCategory category="Web" skills={groups["web"]} />
-      <SkillCategory category="Databases" skills={groups["database"]} />
-      <SkillCategory category="Frameworks" skills={groups["framework"]} />
-      <SkillCategory category="Libraries" skills={groups["library"]} />
-      <SkillCategory category="Systems, Software, & Tools" skills={groups["systems, software, & tools"]} />
+      <SkillCategory category={"programming Language"} skills={groups["programming language"]} />
+      {categories}
     </div>
   );
 }

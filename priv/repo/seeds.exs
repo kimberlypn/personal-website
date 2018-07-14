@@ -124,15 +124,16 @@ defmodule Seeds do
     Repo.insert!(%Skill{name: "jQuery", proficiency: 7, category: "Library"})
     Repo.insert!(%Skill{name: "Redux", proficiency: 7, category: "Library"})
 
-    Repo.insert!(%Skill{name: "Windows", proficiency: 10, category: "Systems, Software, & Tools"})
-    Repo.insert!(%Skill{name: "Mac OS", proficiency: 10, category: "Systems, Software, & Tools"})
-    Repo.insert!(%Skill{name: "Microsoft Office", proficiency: 10, category: "Systems, Software, & Tools"})
-    Repo.insert!(%Skill{name: "Final Cut Pro X", proficiency: 10, category: "Systems, Software, & Tools"})
-    Repo.insert!(%Skill{name: "iMovie '11", proficiency: 10, category: "Systems, Software, & Tools"})
-    Repo.insert!(%Skill{name: "PowerBuilder", proficiency: 6, category: "Systems, Software, & Tools"})
-    Repo.insert!(%Skill{name: "Git", proficiency: 9, category: "Systems, Software, & Tools"})
-    Repo.insert!(%Skill{name: "Eclipse", proficiency: 7, category: "Systems, Software, & Tools"})
-    Repo.insert!(%Skill{name: "Salesforce", proficiency: 6, category: "Systems, Software, & Tools"})
+    Repo.insert!(%Skill{name: "Windows", proficiency: 10, category: "Systems"})
+    Repo.insert!(%Skill{name: "Mac OS", proficiency: 10, category: "Systems"})
+
+    Repo.insert!(%Skill{name: "Microsoft Office", proficiency: 10, category: "Software & Tools"})
+    Repo.insert!(%Skill{name: "Final Cut Pro X", proficiency: 10, category: "Software & Tools"})
+    Repo.insert!(%Skill{name: "iMovie '11", proficiency: 10, category: "Software & Tools"})
+    Repo.insert!(%Skill{name: "PowerBuilder", proficiency: 6, category: "Software & Tools"})
+    Repo.insert!(%Skill{name: "Git", proficiency: 9, category: "Software & Tools"})
+    Repo.insert!(%Skill{name: "Eclipse", proficiency: 7, category: "Software & Tools"})
+    Repo.insert!(%Skill{name: "Salesforce", proficiency: 6, category: "Software & Tools"})
   end
 
   def insert_experiences do
