@@ -3,9 +3,12 @@ import PropTypes from 'prop-types';
 import { Row, Col } from 'reactstrap';
 import Tooltip from '@material-ui/core/Tooltip';
 
+import ForbiddenIsland from './ForbiddenIsland';
+import GoatJumper from './GoatJumper';
+import PinnyArcade from './PinnyArcade';
+import PersonalSite from './PersonalSite';
 import Shambomon from './Shambomon';
 import TravelPal from './TravelPal';
-import GoatJumper from './GoatJumper';
 
 /* Renders the details page for an individual project */
 export default function ProjectDetails({projects, project}) {
@@ -13,9 +16,12 @@ export default function ProjectDetails({projects, project}) {
   var summaries = {};
 
   // Add the pages for each project to the summaries dictionary
-  summaries["shambomon"] = <Shambomon />;
-  summaries["travelpal"] = <TravelPal />;
-  summaries["goat jumper"] = <GoatJumper />;
+  summaries['forbidden island'] = <ForbiddenIsland />;
+  summaries['goat jumper'] = <GoatJumper />;
+  summaries['kimmy\'s pinny arcade'] = <PinnyArcade />;
+  summaries['personal website'] = <PersonalSite />;
+  summaries['shambomon'] = <Shambomon />;
+  summaries['travelpal'] = <TravelPal />;
 
   let summary = summaries[project.title.toLowerCase()];
   var summarySection;

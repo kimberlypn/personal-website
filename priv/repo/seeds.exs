@@ -59,6 +59,44 @@ defmodule Seeds do
       img_src: "travelpal.png",
       repo: "https://github.com/kimberlypn/TravelPal"
     })
+    Repo.insert!(%Project{
+      title: "Personal Website",
+      headline: "Déjà vu? (It's this.)",
+      language: "Elixir",
+      technology: "Elixir, Phoenix, HTML, CSS, JavaScript, React, Redux,
+        PostgreSQL, Node.js",
+      type: "Personal",
+      collaborators: "Kimberly Nguyen",
+      start_date: ~D[2018-07-10],
+      end_date: ~D[2018-07-13],
+      img_src: "personal-website.png",
+      repo: "https://github.com/kimberlypn/personal-website"
+    })
+    Repo.insert!(%Project{
+      title: "Kimmy's Pinny Arcade",
+      headline: "Organizing my Pinny Arcade craze",
+      language: "Elixir",
+      technology: "Elixir, Phoenix, HTML, CSS, PostgreSQL, Node.js",
+      type: "Personal",
+      collaborators: "Kimberly Nguyen",
+      start_date: ~D[2018-04-04],
+      end_date: ~D[2018-04-06],
+      img_src: "kimmys-pinny-arcade.png",
+      repo: "https://github.com/kimberlypn/PinnyArcade"
+    })
+    Repo.insert!(%Project{
+      title: "Forbidden Island",
+      headline: "Can you collect all the targets and fly away in the helicopter
+        before it's too late?",
+      language: "Java",
+      technology: "Java",
+      type: "Class",
+      collaborators: "Kimberly Nguyen, Thien Nguyen",
+      start_date: ~D[2016-03-26],
+      end_date: ~D[2016-04-06],
+      img_src: "forbidden-island.png",
+      repo: "https://github.com/kimberlypn/ForbiddenIsland"
+    })
   end
 
   def insert_skills do
