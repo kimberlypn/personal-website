@@ -28,7 +28,7 @@ export default function Skills({skills}) {
   let categories = [];
   Object.keys(orderedGroups).forEach(function(key, i) {
     // Skip programming language category so that I can hardcode it to be first
-    if (key != "programming language") {
+    if (key != "programming languages") {
       categories.push(
         <SkillCategory key={i} category={key} skills={orderedGroups[key]} />
       );
@@ -37,7 +37,7 @@ export default function Skills({skills}) {
 
   return (
     <div className="container-fluid" id="skills">
-      <SkillCategory category={"programming Language"} skills={groups["programming language"]} />
+      <SkillCategory category={"programming languages"} skills={groups["programming languages"]} />
       {categories}
     </div>
   );

@@ -102,27 +102,27 @@ defmodule Seeds do
   def insert_skills do
     Repo.delete_all(Skill)
 
-    Repo.insert!(%Skill{name: "Elixir", proficiency: 8, category: "Programming Language"})
-    Repo.insert!(%Skill{name: "Racket", proficiency: 7, category: "Programming Language"})
-    Repo.insert!(%Skill{name: "Java", proficiency: 10, category: "Programming Language"})
-    Repo.insert!(%Skill{name: "Python", proficiency: 8, category: "Programming Language"})
-    Repo.insert!(%Skill{name: "C++", proficiency: 9, category: "Programming Language"})
-    Repo.insert!(%Skill{name: "C", proficiency: 7, category: "Programming Language"})
-    Repo.insert!(%Skill{name: "SQL", proficiency: 9, category: "Programming Language"})
+    Repo.insert!(%Skill{name: "Elixir", proficiency: 8, category: "Programming Languages"})
+    Repo.insert!(%Skill{name: "Racket", proficiency: 7, category: "Programming Languages"})
+    Repo.insert!(%Skill{name: "Java", proficiency: 10, category: "Programming Languages"})
+    Repo.insert!(%Skill{name: "Python", proficiency: 8, category: "Programming Languages"})
+    Repo.insert!(%Skill{name: "C++", proficiency: 9, category: "Programming Languages"})
+    Repo.insert!(%Skill{name: "C", proficiency: 7, category: "Programming Languages"})
+    Repo.insert!(%Skill{name: "SQL", proficiency: 9, category: "Programming Languages"})
 
     Repo.insert!(%Skill{name: "HTML5", proficiency: 10, category: "Web"})
     Repo.insert!(%Skill{name: "CSS", proficiency: 10, category: "Web"})
     Repo.insert!(%Skill{name: "JavaScript", proficiency: 8, category: "Web"})
 
-    Repo.insert!(%Skill{name: "Phoenix", proficiency: 8, category: "Framework"})
-    Repo.insert!(%Skill{name: "Bootstrap", proficiency: 10, category: "Framework"})
+    Repo.insert!(%Skill{name: "Phoenix", proficiency: 8, category: "Frameworks"})
+    Repo.insert!(%Skill{name: "Bootstrap", proficiency: 10, category: "Frameworks"})
 
-    Repo.insert!(%Skill{name: "MySQL", proficiency: 9, category: "Database"})
-    Repo.insert!(%Skill{name: "PostgreSQL", proficiency: 8, category: "Database"})
+    Repo.insert!(%Skill{name: "MySQL", proficiency: 9, category: "Databases"})
+    Repo.insert!(%Skill{name: "PostgreSQL", proficiency: 8, category: "Databases"})
 
-    Repo.insert!(%Skill{name: "React", proficiency: 9, category: "Library"})
-    Repo.insert!(%Skill{name: "jQuery", proficiency: 7, category: "Library"})
-    Repo.insert!(%Skill{name: "Redux", proficiency: 7, category: "Library"})
+    Repo.insert!(%Skill{name: "React", proficiency: 9, category: "Libraries"})
+    Repo.insert!(%Skill{name: "jQuery", proficiency: 7, category: "Libraries"})
+    Repo.insert!(%Skill{name: "Redux", proficiency: 7, category: "Libraries"})
 
     Repo.insert!(%Skill{name: "Windows", proficiency: 10, category: "Systems"})
     Repo.insert!(%Skill{name: "Mac OS", proficiency: 10, category: "Systems"})
