@@ -5,6 +5,8 @@ import Tooltip from '@material-ui/core/Tooltip';
 
 import ForbiddenIsland from './ForbiddenIsland';
 import GoatJumper from './GoatJumper';
+import PinnyArcade from './PinnyArcade';
+import PersonalSite from './PersonalSite';
 import Shambomon from './Shambomon';
 import TravelPal from './TravelPal';
 
@@ -16,6 +18,8 @@ export default function ProjectDetails({projects, project}) {
   // Add the pages for each project to the summaries dictionary
   summaries['forbidden island'] = <ForbiddenIsland />;
   summaries['goat jumper'] = <GoatJumper />;
+  summaries['kimmy\'s pinny arcade'] = <PinnyArcade />;
+  summaries['personal website'] = <PersonalSite />;
   summaries['shambomon'] = <Shambomon />;
   summaries['travelpal'] = <TravelPal />;
 
