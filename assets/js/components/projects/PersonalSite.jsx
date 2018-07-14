@@ -13,7 +13,7 @@ export default function PersonalSite() {
       looked like by checking out their respective GitHub repositories.<br /><br />
       I made the first website when I had just switched into CS from health
       science, so it was no surprise that after graduating, I wanted to revamp
-      this barebones-HTML-CSS-no-frameworks-not-even-Bootstrap attempt of a
+      that barebones-HTML-CSS-no-frameworks-not-even-Bootstrap attempt of a
       website into something much more interesting.<br /><br />
       On my second go, I rebuilt my website using the stack I had learned from
       my Web Development class. My second attempt looked much better, but I
