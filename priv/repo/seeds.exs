@@ -24,8 +24,8 @@ defmodule Seeds do
       headline: "A two-player game inspired by the two classics: Roshambo
         (\"Rock-Paper-Scissors\") and Pokémon",
       language: "Elixir",
-      technology: "Elixir, Phoenix, HTML, CSS, JavaScript, React, PostgreSQL,
-        Node.js",
+      technology: "Elixir, Phoenix, HTML, CSS, Bootstrap, JavaScript, React,
+        PostgreSQL, Node.js",
       type: "Class",
       collaborators: "Kimberly Nguyen, Matt Dang",
       start_date: ~D[2018-02-20],
@@ -50,8 +50,8 @@ defmodule Seeds do
       title: "TravelPal",
       headline: "A social flights application",
       language: "Elixir",
-      technology: "Elixir, Phoenix, HTML, CSS, JavaScript, React, Redux,
-        PostgreSQL, Node.js",
+      technology: "Elixir, Phoenix, HTML, CSS, Bootstrap, JavaScript, React,
+        Redux, PostgreSQL, Node.js",
       type: "Class",
       collaborators: "Kimberly Nguyen, Longsheng Lin, Matt Dang, William Guo",
       start_date: ~D[2018-03-27],
@@ -63,8 +63,8 @@ defmodule Seeds do
       title: "Personal Website",
       headline: "Déjà vu? (It's this.)",
       language: "Elixir",
-      technology: "Elixir, Phoenix, HTML, CSS, JavaScript, React, Redux,
-        PostgreSQL, Node.js",
+      technology: "Elixir, Phoenix, HTML, CSS, Bootstrap, JavaScript, React,
+        Redux, PostgreSQL, Node.js",
       type: "Personal",
       collaborators: "Kimberly Nguyen",
       start_date: ~D[2018-07-10],
@@ -76,7 +76,7 @@ defmodule Seeds do
       title: "Kimmy's Pinny Arcade",
       headline: "Organizing my Pinny Arcade craze",
       language: "Elixir",
-      technology: "Elixir, Phoenix, HTML, CSS, PostgreSQL, Node.js",
+      technology: "Elixir, Phoenix, HTML, CSS, Bootstrap, PostgreSQL, Node.js",
       type: "Personal",
       collaborators: "Kimberly Nguyen",
       start_date: ~D[2018-04-04],
@@ -89,7 +89,7 @@ defmodule Seeds do
       headline: "Can you collect all the targets and fly away in the helicopter
         before it's too late?",
       language: "Java",
-      technology: "Java",
+      technology: "Java, ImpWorld",
       type: "Class",
       collaborators: "Kimberly Nguyen, Thien Nguyen",
       start_date: ~D[2016-03-26],
@@ -102,91 +102,38 @@ defmodule Seeds do
   def insert_skills do
     Repo.delete_all(Skill)
 
-    Repo.insert!(%Skill{
-      name: "Elixir",
-      proficiency: 8,
-      category: "Programming Language"
-    })
-    Repo.insert!(%Skill{
-      name: "Racket",
-      proficiency: 7,
-      category: "Programming Language"
-    })
-    Repo.insert!(%Skill{
-      name: "Java",
-      proficiency: 10,
-      category: "Programming Language"
-    })
-    Repo.insert!(%Skill{
-      name: "Python",
-      proficiency: 8,
-      category: "Programming Language"
-    })
-    Repo.insert!(%Skill{
-      name: "C++",
-      proficiency: 9,
-      category: "Programming Language"
-    })
-    Repo.insert!(%Skill{
-      name: "C",
-      proficiency: 8,
-      category: "Programming Language"
-    })
-    Repo.insert!(%Skill{
-      name: "SQL",
-      proficiency: 9,
-      category: "Programming Language"
-    })
-    Repo.insert!(%Skill{
-      name: "HTML5",
-      proficiency: 10,
-      category: "Web"
-    })
-    Repo.insert!(%Skill{
-      name: "CSS",
-      proficiency: 10,
-      category: "Web"
-    })
-    Repo.insert!(%Skill{
-      name: "JavaScript",
-      proficiency: 9,
-      category: "Web"
-    })
-    Repo.insert!(%Skill{
-      name: "Phoenix",
-      proficiency: 8,
-      category: "Framework"
-    })
-    Repo.insert!(%Skill{
-      name: "Bootstrap",
-      proficiency: 10,
-      category: "Framework"
-    })
-    Repo.insert!(%Skill{
-      name: "MySQL",
-      proficiency: 9,
-      category: "Database"
-    })
-    Repo.insert!(%Skill{
-      name: "PostgreSQL",
-      proficiency: 8,
-      category: "Database"
-    })
-    Repo.insert!(%Skill{
-      name: "React",
-      proficiency: 9,
-      category: "Library"
-    })
-    Repo.insert!(%Skill{
-      name: "jQuery",
-      proficiency: 8,
-      category: "Library"
-    })
-    Repo.insert!(%Skill{
-      name: "Redux",
-      proficiency: 7,
-      category: "Library"
-    })
+    Repo.insert!(%Skill{name: "Elixir", proficiency: 8, category: "Programming Languages"})
+    Repo.insert!(%Skill{name: "Racket", proficiency: 7, category: "Programming Languages"})
+    Repo.insert!(%Skill{name: "Java", proficiency: 10, category: "Programming Languages"})
+    Repo.insert!(%Skill{name: "Python", proficiency: 8, category: "Programming Languages"})
+    Repo.insert!(%Skill{name: "C++", proficiency: 9, category: "Programming Languages"})
+    Repo.insert!(%Skill{name: "C", proficiency: 7, category: "Programming Languages"})
+    Repo.insert!(%Skill{name: "SQL", proficiency: 9, category: "Programming Languages"})
+
+    Repo.insert!(%Skill{name: "HTML5", proficiency: 10, category: "Web"})
+    Repo.insert!(%Skill{name: "CSS", proficiency: 10, category: "Web"})
+    Repo.insert!(%Skill{name: "JavaScript", proficiency: 8, category: "Web"})
+
+    Repo.insert!(%Skill{name: "Phoenix", proficiency: 8, category: "Frameworks"})
+    Repo.insert!(%Skill{name: "Bootstrap", proficiency: 10, category: "Frameworks"})
+
+    Repo.insert!(%Skill{name: "MySQL", proficiency: 9, category: "Databases"})
+    Repo.insert!(%Skill{name: "PostgreSQL", proficiency: 8, category: "Databases"})
+
+    Repo.insert!(%Skill{name: "React", proficiency: 9, category: "Libraries"})
+    Repo.insert!(%Skill{name: "jQuery", proficiency: 7, category: "Libraries"})
+    Repo.insert!(%Skill{name: "Redux", proficiency: 7, category: "Libraries"})
+
+    Repo.insert!(%Skill{name: "Windows", proficiency: 10, category: "Systems"})
+    Repo.insert!(%Skill{name: "Mac OS", proficiency: 10, category: "Systems"})
+
+    Repo.insert!(%Skill{name: "Microsoft Office", proficiency: 10, category: "Software & Tools"})
+    Repo.insert!(%Skill{name: "Final Cut Pro X", proficiency: 10, category: "Software & Tools"})
+    Repo.insert!(%Skill{name: "iMovie '11", proficiency: 10, category: "Software & Tools"})
+    Repo.insert!(%Skill{name: "PowerBuilder", proficiency: 6, category: "Software & Tools"})
+    Repo.insert!(%Skill{name: "Git", proficiency: 9, category: "Software & Tools"})
+    Repo.insert!(%Skill{name: "Eclipse", proficiency: 7, category: "Software & Tools"})
+    Repo.insert!(%Skill{name: "Salesforce", proficiency: 6, category: "Software & Tools"})
   end
 
   def insert_experiences do

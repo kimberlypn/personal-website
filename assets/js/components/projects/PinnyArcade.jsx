@@ -4,7 +4,7 @@ import React from 'react';
 export default function PinnyArcade() {
   return (
     <p>
-      If you have known me or a while (or have talked to me some time around
+      If you have known me for a while (or have talked to me some time around
       March or April), you will know that I love going to&nbsp;
       <a href="http://east.paxsite.com/">PAX East</a>. Specifically, it is the&nbsp;
       <a href="https://www.penny-arcade.com/pinny-arcade/">Pinny Arcade</a>&nbsp;

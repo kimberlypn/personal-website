@@ -3,12 +3,12 @@ import PropTypes from 'prop-types';
 import { Row, Col } from 'reactstrap';
 import Tooltip from '@material-ui/core/Tooltip';
 
-import ForbiddenIsland from './ForbiddenIsland';
-import GoatJumper from './GoatJumper';
-import PinnyArcade from './PinnyArcade';
-import PersonalSite from './PersonalSite';
-import Shambomon from './Shambomon';
-import TravelPal from './TravelPal';
+import ForbiddenIsland from './projects/ForbiddenIsland';
+import GoatJumper from './projects/GoatJumper';
+import PinnyArcade from './projects/PinnyArcade';
+import PersonalSite from './projects/PersonalSite';
+import Shambomon from './projects/Shambomon';
+import TravelPal from './projects/TravelPal';
 
 /* Renders the details page for an individual project */
 export default function ProjectDetails({projects, project}) {
@@ -29,7 +29,7 @@ export default function ProjectDetails({projects, project}) {
   // Only display the summary section if the project has a summary
   if (summary) {
     summarySection = (
-      <div className="project-section">
+      <div className="project-section project-summary">
         <h3>Summary</h3>
         {summary}
       </div>
