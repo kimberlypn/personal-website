@@ -5,6 +5,7 @@ import { Row, Col } from 'reactstrap';
 import IconLink from './IconLink';
 import ForbiddenIsland from './projects/ForbiddenIsland';
 import GoatJumper from './projects/GoatJumper';
+import MemoryGame from './projects/MemoryGame';
 import PinnyArcade from './projects/PinnyArcade';
 import PersonalSite from './projects/PersonalSite';
 import Shambomon from './projects/Shambomon';
@@ -19,6 +20,7 @@ export default function ProjectDetails({projects, project}) {
   summaries['forbidden island'] = <ForbiddenIsland />;
   summaries['goat jumper'] = <GoatJumper />;
   summaries['kimmy\'s pinny arcade'] = <PinnyArcade />;
+  summaries['memory game'] = <MemoryGame />;
   summaries['personal website'] = <PersonalSite />;
   summaries['shambomon'] = <Shambomon />;
   summaries['travelpal'] = <TravelPal />;
