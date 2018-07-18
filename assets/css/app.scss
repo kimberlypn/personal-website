@@ -190,13 +190,19 @@ a:hover {
   text-align: justify;
 }
 
-.project-summary {
+.project-details {
+  // Override the justify of project-section
   text-align: left;
 }
 
 .repo-icon {
   text-align: center;
   font-size: 50px;
+}
+
+.repo-icon i {
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .project-arrows {
