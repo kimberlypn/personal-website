@@ -13,6 +13,7 @@ defmodule PersonalWebsite.Repo.Migrations.CreateProjects do
       add :end_date, :date, null: false
       add :img_src, :string, null: false
       add :repo, :string
+      add :demo, :string
 
       timestamps()
     end

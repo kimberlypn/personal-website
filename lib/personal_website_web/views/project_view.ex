@@ -21,6 +21,7 @@ defmodule PersonalWebsiteWeb.ProjectView do
       start_date: project.start_date,
       end_date: project.end_date,
       img_src: project.img_src,
-      repo: project.repo}
+      repo: project.repo,
+      demo: project.demo}
   end
 end

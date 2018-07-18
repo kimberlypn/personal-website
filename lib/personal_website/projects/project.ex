@@ -14,6 +14,7 @@ defmodule PersonalWebsite.Projects.Project do
     field :headline, :string
     field :technology, :string
     field :repo, :string
+    field :demo, :string
 
     timestamps()
   end
@@ -22,7 +23,7 @@ defmodule PersonalWebsite.Projects.Project do
   def changeset(project, attrs) do
     project
     |> cast(attrs, [:title, :language, :type, :collaborators, :start_date,
-    :end_date, :img_src, :headline, :technology, :repo])
+    :end_date, :img_src, :headline, :technology, :repo, :demo])
     |> validate_required([:title, :language, :type, :collaborators, :start_date,
       :end_date, :img_src])
     |> validate_dates()
