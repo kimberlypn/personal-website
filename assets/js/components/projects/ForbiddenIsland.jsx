@@ -4,9 +4,9 @@ import React from 'react';
 export default function ForbiddenIsland() {
   return (
     <p>
-      This was a project for my Fundamentals of Computer Science II class. The
-      assignment was to design a game with mutable world state, ArrayLists,
-      mutable linked data structures, and loops.<br /><br />
+      This was the first of two projects for my Fundamentals of Computer Science
+      II class. The assignment was to design a game with mutable world state,
+      ArrayLists, mutable linked data structures, and loops.<br /><br />
       My partner and I built a forbidden island game using the&nbsp;
       <a href="https://www2.ccs.neu.edu/javalib/ImpWorld/">ImpWorld</a>
       &nbsp;library. The user controls a pilot using the arrow keys, and the
