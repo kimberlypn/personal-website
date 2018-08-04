@@ -5,10 +5,12 @@ import { Row, Col } from 'reactstrap';
 import IconLink from './IconLink';
 import ForbiddenIsland from './projects/ForbiddenIsland';
 import GoatJumper from './projects/GoatJumper';
+import JubileeProject from './projects/JubileeProject';
 import MazeGame from './projects/MazeGame';
 import MemoryGame from './projects/MemoryGame';
 import PinnyArcade from './projects/PinnyArcade';
 import PersonalSite from './projects/PersonalSite';
+import PowerUpGambia from './projects/PowerUpGambia';
 import Shambomon from './projects/Shambomon';
 import TravelPal from './projects/TravelPal';
 
@@ -20,10 +22,12 @@ export default function ProjectDetails({projects, project}) {
   // Add the pages for each project to the summaries dictionary
   summaries['forbidden island'] = <ForbiddenIsland />;
   summaries['goat jumper'] = <GoatJumper />;
+  summaries['the jubilee project'] = <JubileeProject />;
   summaries['kimmy\'s pinny arcade'] = <PinnyArcade />;
   summaries['maze game'] = <MazeGame />;
   summaries['memory game'] = <MemoryGame />;
   summaries['personal website'] = <PersonalSite />;
+  summaries['power up gambia'] = <PowerUpGambia />;
   summaries['shambomon'] = <Shambomon />;
   summaries['travelpal'] = <TravelPal />;
 
@@ -67,11 +71,17 @@ export default function ProjectDetails({projects, project}) {
       return projects[curr - 1].id;
   }
 
-  // Only provide a link to the demo if it exists
+  // Only provide a link to the repo or demo if it exists
   let demo = [];
   if (project.demo != null) {
     demo.push(
       <IconLink title="Demo" icon="fas fa-play-circle" link={project.demo} />
+    );
+  }
+  let repo = [];
+  if (project.repo != null) {
+    repo.push(
+      <IconLink title="Repo" icon="fab fa-github" link={project.repo} />
     );
   }
 
@@ -98,7 +108,7 @@ export default function ProjectDetails({projects, project}) {
           {summarySection}
           <div className="repo-icon">
             {/* Icon source: https://fontawesome.com/icons/github?style=brands */}
-            <IconLink title="Repo" icon="fab fa-github" link={project.repo} />
+            {repo}
             {/* Icon source: https://fontawesome.com/icons/play-circle?style=solid */}
             {demo}
           </div>

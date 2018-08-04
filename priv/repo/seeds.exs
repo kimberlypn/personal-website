@@ -127,6 +127,32 @@ defmodule Seeds do
       repo: "https://github.com/kimberlypn/CS4550/tree/master/memory",
       demo: "https://memory.kimberlypn.com/"
     })
+    Repo.insert!(%Project{
+      title: "The Jubilee Project",
+      headline: "A website dedicated to The Jubilee Project (entry to the Seevak
+      Website Competition)",
+      language: "JavaScript",
+      technology: "JavaScript, HTML, CSS",
+      type: "Competition",
+      collaborators: "Kimberly Nguyen, Ivanna Lin, Katherine Kerr",
+      start_date: ~D[2012-09-01],
+      end_date: ~D[2012-06-01],
+      img_src: "seevak-jp.jpg",
+      demo: "http://www.learntoquestion.com/seevak/groups/2012/sites/jubilee/theproject.html"
+    })
+    Repo.insert!(%Project{
+      title: "Power Up Gambia",
+      headline: "A website dedicated to Power Up Gambia (entry to the Seevak
+      Website Competition)",
+      language: "JavaScript",
+      technology: "JavaScript, HTML, CSS",
+      type: "Competition",
+      collaborators: "Kimberly Nguyen, Ivanna Lin, Christina Huang",
+      start_date: ~D[2011-09-01],
+      end_date: ~D[2011-06-01],
+      img_src: "seevak-pug.jpg",
+      demo: "http://www.learntoquestion.com/seevak/groups/2011/sites/power-up-gambia/"
+    })
   end
 
   def insert_skills do
@@ -134,11 +160,11 @@ defmodule Seeds do
 
     Repo.insert!(%Skill{name: "Elixir", proficiency: 7, category: "Programming Languages"})
     Repo.insert!(%Skill{name: "Racket", proficiency: 6, category: "Programming Languages"})
-    Repo.insert!(%Skill{name: "Java", proficiency: 10, category: "Programming Languages"})
-    Repo.insert!(%Skill{name: "Python", proficiency: 7, category: "Programming Languages"})
-    Repo.insert!(%Skill{name: "C++", proficiency: 9, category: "Programming Languages"})
-    Repo.insert!(%Skill{name: "C", proficiency: 7, category: "Programming Languages"})
-    Repo.insert!(%Skill{name: "SQL", proficiency: 9, category: "Programming Languages"})
+    Repo.insert!(%Skill{name: "Java", proficiency: 9, category: "Programming Languages"})
+    Repo.insert!(%Skill{name: "Python", proficiency: 6, category: "Programming Languages"})
+    Repo.insert!(%Skill{name: "C++", proficiency: 8, category: "Programming Languages"})
+    Repo.insert!(%Skill{name: "C", proficiency: 6, category: "Programming Languages"})
+    Repo.insert!(%Skill{name: "SQL", proficiency: 7, category: "Programming Languages"})
 
     Repo.insert!(%Skill{name: "HTML5", proficiency: 10, category: "Web"})
     Repo.insert!(%Skill{name: "CSS", proficiency: 10, category: "Web"})
@@ -152,7 +178,7 @@ defmodule Seeds do
 
     Repo.insert!(%Skill{name: "React", proficiency: 7, category: "Libraries"})
     Repo.insert!(%Skill{name: "jQuery", proficiency: 7, category: "Libraries"})
-    Repo.insert!(%Skill{name: "Redux", proficiency: 6, category: "Libraries"})
+    Repo.insert!(%Skill{name: "Redux", proficiency: 5, category: "Libraries"})
 
     Repo.insert!(%Skill{name: "Windows", proficiency: 10, category: "Systems"})
     Repo.insert!(%Skill{name: "Mac OS", proficiency: 10, category: "Systems"})
@@ -170,12 +196,19 @@ defmodule Seeds do
     Repo.delete_all(Experience)
 
     Repo.insert!(%Experience{
+      company: "PowerAdvocate",
+      position: "Junior Software Developer",
+      location: "Boston",
+      start_date: ~D[2018-08-13]
+    })
+    Repo.insert!(%Experience{
       company: "MCPHS University",
       position: "Application Developer",
       location: "Boston",
       description: "- Automated process of uploading thousands of students’ test scores to Salesforce
-      - Generated reports for admissions and housing departments using SQL and PowerBuilder and optimized existing SQL scripts to improve performance in report database
+      - Generated reports for admissions and housing departments using SQL and PowerBuilder and optimized existing SQL queries to improve performance in report database
       - Cleaned stale data on Salesforce and maintained documents to ensure synchronization across applications daily
+      - Configured onboarding platform for human resources department
       - Assisted senior .NET developer in automating student refund service using WinAutomation",
       start_date: ~D[2017-01-04],
       end_date: ~D[2017-08-31]

@@ -18,7 +18,7 @@ defmodule PersonalWebsite.Experiences.Experience do
   def changeset(experience, attrs) do
     experience
     |> cast(attrs, [:company, :position, :location, :description, :start_date, :end_date])
-    |> validate_required([:company, :position, :location, :description, :start_date, :end_date])
+    |> validate_required([:company, :position, :location, :start_date])
     |> validate_dates()
   end
 
