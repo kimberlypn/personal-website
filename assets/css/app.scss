@@ -137,7 +137,7 @@ a:hover {
 }
 
 .project-title {
-  font-size: 30px;
+  font-size: 26px;
   // Center the title vertically and horizontally
   display: none;
   position: absolute;
@@ -190,10 +190,19 @@ a:hover {
   text-align: justify;
 }
 
+.project-details {
+  // Override the justify of project-section
+  text-align: left;
+}
+
 .repo-icon {
   text-align: center;
   font-size: 50px;
-  cursor: pointer;
+}
+
+.repo-icon i {
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .project-arrows {
