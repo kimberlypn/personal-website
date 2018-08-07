@@ -23,23 +23,31 @@ export default function Experience({experience}) {
   }
 
   let start_month = convertMonth(start_date);
-  let end_month = convertMonth(end_date);
   let start_year = convertYear(start_date);
-  let end_year = convertYear(end_date);
+  let end_month = end_date ? convertMonth(end_date) : end_date;
+  let end_year = end_date ? convertYear(end_date) : end_date;
 
   // Stylize the date range
-  if (start_date.substring(0, 4) == end_date.substring(0, 4))
+  if (end_date == null)
+    range = start_month + ' ' + start_year + ' - ' + "Present";
+  else if (start_date.substring(0, 4) == end_date.substring(0, 4))
     // If start and end years are the same, only include the year once
     range = start_month + ' - ' + end_month + ' ' + start_year;
   else
     range = start_month + ' ' + start_year + ' - ' + end_month + ' ' + end_year;
 
-  // Split on the "-", which will create an array entry for each point
-  let description = experience.description.split("- ");
+
   var parsed_desc = [];
-  // Put a new line after each point, skipping the first entry which is null
-  for (var i = 1; i < description.length; i++) {
-    parsed_desc.push(<li key={i}>{description[i]}</li>)
+  if (!experience.description) {
+    parsed_desc.push(<li>TBD</li>)
+  }
+  // Split on the "-", which will create an array entry for each point
+  else {
+    let description = experience.description.split("- ");
+    // List each point, skipping the first entry which is null
+    for (var i = 1; i < description.length; i++) {
+      parsed_desc.push(<li key={i}>{description[i]}</li>)
+    }
   }
 
   return (

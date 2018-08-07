@@ -1,5 +1,7 @@
 # Personal Website
 
+My website can be visited at: https://www.kimberlypn.com/.
+
 ## Introduction
 This is my third attempt at a personal website. See [1](https://github.com/kimberlypn/kimberlypn.github.io/tree/v1.0)
 and [2](https://github.com/kimberlypn/personal-website/tree/v2.0) for previous
@@ -15,7 +17,7 @@ storing my projects in a database would have been a lot more efficient.
 Thus leads us to this final version, which I am finally happy with. My website
 is now a single-page application (SPA) with React for the UI, Redux for
 managing client-side application/UI state, and a Postgres database, all wrapped
-within a Phoenix framework. 
+within a Phoenix framework.
 
 ## How to Run Locally
 1. Pull this repository
