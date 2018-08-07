@@ -1,6 +1,8 @@
 # Personal Website
 
-My website can be visited at: https://www.kimberlypn.com/.
+My website can be visited at: https://kimberlypn.herokuapp.com/. 
+
+(It takes a few seconds to load since I am using Heroku's free tier.)
 
 ## Introduction
 This is my third attempt at a personal website. See [1](https://github.com/kimberlypn/kimberlypn.github.io/tree/v1.0)
