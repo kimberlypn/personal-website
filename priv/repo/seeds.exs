@@ -161,9 +161,9 @@ defmodule Seeds do
     Repo.insert!(%Skill{name: "Elixir", proficiency: 7, category: "Programming Languages"})
     Repo.insert!(%Skill{name: "Racket", proficiency: 6, category: "Programming Languages"})
     Repo.insert!(%Skill{name: "Java", proficiency: 9, category: "Programming Languages"})
-    Repo.insert!(%Skill{name: "Python", proficiency: 6, category: "Programming Languages"})
+    Repo.insert!(%Skill{name: "Python", proficiency: 7, category: "Programming Languages"})
     Repo.insert!(%Skill{name: "C++", proficiency: 8, category: "Programming Languages"})
-    Repo.insert!(%Skill{name: "C", proficiency: 6, category: "Programming Languages"})
+    Repo.insert!(%Skill{name: "C", proficiency: 7, category: "Programming Languages"})
     Repo.insert!(%Skill{name: "SQL", proficiency: 7, category: "Programming Languages"})
 
     Repo.insert!(%Skill{name: "HTML5", proficiency: 10, category: "Web"})
@@ -178,7 +178,7 @@ defmodule Seeds do
 
     Repo.insert!(%Skill{name: "React", proficiency: 7, category: "Libraries"})
     Repo.insert!(%Skill{name: "jQuery", proficiency: 7, category: "Libraries"})
-    Repo.insert!(%Skill{name: "Redux", proficiency: 5, category: "Libraries"})
+    Repo.insert!(%Skill{name: "Redux", proficiency: 6, category: "Libraries"})
 
     Repo.insert!(%Skill{name: "Windows", proficiency: 10, category: "Systems"})
     Repo.insert!(%Skill{name: "Mac OS", proficiency: 10, category: "Systems"})
