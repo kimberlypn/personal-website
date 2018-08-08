@@ -8,6 +8,11 @@
 /******************************** END OF FONTS ********************************/
 
 /***************************** SHARED ACROSS PAGES ****************************/
+html {
+  // Make scollbar always visible to avoid page shifting
+  overflow-y:scroll;
+}
+
 body {
   font-family: 'Gidole-Regular';
   font-size: 17px;
@@ -120,6 +125,12 @@ a:hover {
   opacity: 0.5;
 }
 /******************************* END OF CONTACT *******************************/
+
+/*********************************** FILTERS **********************************/
+#filters p {
+  padding-top: 20px;
+}
+/******************************* END OF FILTERS *******************************/
 
 /********************************** PROJECTS **********************************/
 .project {

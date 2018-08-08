@@ -32,7 +32,7 @@ defmodule Seeds do
       end_date: ~D[2018-03-27],
       img_src: "shambomon.png",
       repo: "https://github.com/kimberlypn/Shambomon",
-      demo: "https://shambomon.kimberlypn.com/"
+      demo: "https://shambomon.herokuapp.com/"
     })
     Repo.insert!(%Project{
       title: "Goat Jumper",
@@ -59,7 +59,7 @@ defmodule Seeds do
       end_date: ~D[2018-04-20],
       img_src: "travelpal.png",
       repo: "https://github.com/kimberlypn/TravelPal",
-      demo: "https://travelpal.kimberlypn.com/"
+      demo: "https://my-travelpal.herokuapp.com/"
     })
     Repo.insert!(%Project{
       title: "Personal Website",
@@ -73,7 +73,7 @@ defmodule Seeds do
       end_date: ~D[2018-07-13],
       img_src: "personal-website.png",
       repo: "https://github.com/kimberlypn/personal-website",
-      demo: "https://www.kimberlypn.com/"
+      demo: "https://kimberlypn.herokuapp.com/"
     })
     Repo.insert!(%Project{
       title: "Kimmy's Pinny Arcade",
@@ -125,7 +125,7 @@ defmodule Seeds do
       end_date: ~D[2016-04-06],
       img_src: "memory-game.png",
       repo: "https://github.com/kimberlypn/CS4550/tree/master/memory",
-      demo: "https://memory.kimberlypn.com/"
+      demo: "https://memory-card-game.herokuapp.com/"
     })
     Repo.insert!(%Project{
       title: "The Jubilee Project",
