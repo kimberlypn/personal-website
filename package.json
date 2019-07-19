@@ -1,0 +1,31 @@
+{
+  "name": "personal_website",
+  "version": "1.0.0",
+  "description": "My website can be visited at: https://kimberlypn.herokuapp.com/.",
+  "main": "server.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kimberlypn/personal-website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kimberlypn/personal-website/issues"
+  },
+  "homepage": "https://github.com/kimberlypn/personal-website#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "pg": "^7.11.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.0"
+  }
+}

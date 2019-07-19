@@ -1,0 +1,16 @@
+.skill {
+  margin-bottom: 15px;
+}
+
+.skill-name {
+  font-size: 17px;
+  text-align: right;
+}
+
+.dot {
+  border-radius: 50%;
+  display: inline-block;
+  height: 18px;
+  width: 18px;
+  margin-right: 5px;
+}

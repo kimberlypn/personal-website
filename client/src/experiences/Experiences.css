@@ -1,0 +1,17 @@
+.experience {
+  margin-bottom: 20px;
+}
+
+.experience-position {
+  color: #59c6bb;
+}
+
+.experience-company {
+  background-color: #59c6bb;
+  color: white;
+  text-align: center;
+}
+
+.experience-details {
+  text-align: center;
+}

@@ -1,0 +1,33 @@
+#tag-line {
+  font-size: 40px;
+  margin-bottom: 20px;
+  text-align: right;
+}
+
+#tag-line p {
+  cursor: default;
+}
+
+#got-ref {
+  color: #59c6bb;
+  display: none;
+  font-size: 30px;
+}
+
+#tag-line:hover #got-ref {
+  /* Display Game of Thrones Easter egg when hovering over the tag line */
+  display: block;
+}
+
+#blurb {
+  text-align: justify;
+}
+
+#home img {
+  height: auto;
+  width: 90%;
+}
+
+#me {
+  text-align: center;
+}
