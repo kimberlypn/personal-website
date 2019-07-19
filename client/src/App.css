@@ -1,0 +1,77 @@
+@font-face {
+  font-family: 'Gidole-Regular';
+  src: url('./static/fonts/Gidole-Regular.ttf');
+}
+
+html {
+  /* Make scrollbar always visible to avoid page shifting */
+  overflow-y: scroll;
+}
+
+#root {
+  font-family: 'Gidole-Regular', serif;
+  font-size: 17px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
+/* Animation source: https://fabriceleven.com/design/creating-fancy-css3-fade-in-animations-on-page-load/ */
+@-webkit-keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#root > #index {
+  /* Make everything invisible upon start of animation */
+  opacity: 0;
+
+  /* Call our keyframe named fade-in, use animation ease-in, and repeat only once */
+  -moz-animation: fade-in ease-in 1;
+  -webkit-animation: fade-in ease-in 1;
+  animation: fade-in ease-in 1;
+
+  /* Make sure we remain at last keyframe value (opacity: 1) after animation is done */
+  -moz-animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+
+  -moz-animation-duration: 0.7s;
+  -webkit-animation-duration: 0.7s;
+  animation-duration: 0.7s;
+}
+
+#root ul {
+  padding-left: 20px;
+}
+
+#root a:not(.navbar-brand):not(.nav-link) {
+  color: #59c6bb;
+}
+
+#root a:hover {
+  text-decoration: none;
+  opacity: 0.7;
+}

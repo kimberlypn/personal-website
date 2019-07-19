@@ -1,0 +1,11 @@
+.navbar {
+  margin-bottom: 30px;
+}
+
+.navbar-brand > h1{
+  font-size: 45px;
+}
+
+.nav-item a:hover {
+  color: #59c6bb !important;
+}
