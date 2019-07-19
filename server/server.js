@@ -1,8 +1,11 @@
 const express = require('express');
+const path = require('path');
+const favicon = require('express-favicon');
 const bodyParser = require('body-parser');
-const app = express();
 const port = process.env.PORT || 5000;
 const db = require('./dao');
+
+const app = express();
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
@@ -14,7 +17,8 @@ app.get('/skills', db.getSkills);
 
 app.listen(port, () => console.log(`App running on port ${port}.`));
 
-const path = require('path');
+app.use(favicon(__dirname + '/build/favicon.ico'));
+
 // Serve static files from the React frontend app
 app.use(express.static(path.join(__dirname, 'client/build')));
 
