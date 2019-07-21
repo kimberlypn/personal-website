@@ -9,10 +9,9 @@ const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 
-app.get('/experiences', db.getExperiences);
-app.get('/projects', db.getProjects);
-app.get('/projects/:id', db.getProjectById);
-app.get('/skills', db.getSkills);
+app.get('/api/v1/experiences', db.getExperiences);
+app.get('/api/v1/projects', db.getProjects);
+app.get('/api/v1/skills', db.getSkills);
 
 app.listen(port, () => console.log(`App running on port ${port}.`));
 

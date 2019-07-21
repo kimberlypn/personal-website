@@ -5,11 +5,11 @@ export default {
 }
 
 function componentDidMount() {
-  fetchProject.call(this);
+  fetchProjects.call(this);
 }
 
-function fetchProject() {
-  axios.get('/projects')
+function fetchProjects() {
+  axios.get('/api/v1/projects')
     .then(response => {
       const projects = response.data;
       const projectIdx = projects.findIndex(project => project.id === this.props.projectId);

@@ -10,7 +10,7 @@ function componentDidMount() {
 }
 
 function fetchExperiences() {
-  axios.get('/experiences')
+  axios.get('/api/v1/experiences')
     .then(response => (this.setState({experiences: response.data})));
 }
 
