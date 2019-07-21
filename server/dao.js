@@ -1,10 +1,11 @@
+require('dotenv').config();
 const Pool = require('pg/lib').Pool;
 const pool = new Pool({
-  user: 'personal_website',
-  host: 'localhost',
-  database: 'personal_website_dev',
-  password: 'QDTHwEk4zN62',
-  port: 5432,
+  user: process.env.DB_USER,
+  host: process.env.DB_HOST,
+  database: process.env.DB_DATABASE,
+  password: process.env.DB_PASSWORD,
+  port: process.env.DB_PORT,
 });
 
 const getExperiences = (request, response) => {
