@@ -9,7 +9,7 @@ export const Projects = () => {
   React.useEffect(() => {
     const fetchProjects = async () => {
       try {
-        const response = await axios.get('/projects');
+        const response = await axios.get('/api/v1/projects');
         setProjects(response.data);
       } catch (e) {
         console.log(e);
