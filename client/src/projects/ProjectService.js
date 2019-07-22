@@ -9,7 +9,7 @@ function componentDidMount() {
 }
 
 function fetchProject() {
-  axios.get('/projects')
+  axios.get('/api/v1/projects')
     .then(response => {
       const projects = response.data;
       const projectIdx = projects.findIndex(project => project.id === this.props.projectId);

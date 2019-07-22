@@ -18,7 +18,7 @@ function App() {
           <Route path='/' exact={true} component={Home}/>
           <Route path='/projects' exact={true} component={Projects}/>
           <Route path='/skills' exact={true} component={Skills}/>
-          <Route path='/experience' exact={true} component={Experiences}/>
+          <Route path='/experiences' exact={true} component={Experiences}/>
           <Route path='/projects/:id(\d+)'
                  exact={true}
                  render={({match}) => <Project projectId={match.params.id}/>}

@@ -10,7 +10,7 @@ function componentDidMount() {
 }
 
 function fetchSkills() {
-  axios.get('/skills')
+  axios.get('/api/v1/skills')
     .then(response => (this.setState({skills: sortCategories(groupSkillsByCategory(response.data))})));
 }
 

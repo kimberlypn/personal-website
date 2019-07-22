@@ -1,28 +1,26 @@
-# App artifacts
-/_build
-/db
-/deps
-/*.ez
-
-# Generated on crash by the VM
-erl_crash.dump
-
-# Generated on crash by NPM
-npm-debug.log
-
-# Static artifacts
-/assets/node_modules
+# dependencies
+/node_modules
 /client/node_modules
+/client/.pnp
+/client/.pnp.js
 
-# Since we are building assets from assets/,
-# we ignore priv/static. You may want to comment
-# this depending on your deployment strategy.
-/priv/static/
+# testing
+/client/coverage
 
-# Files matching config/*.secret.exs pattern contain sensitive
-# data and you should not commit them into version control.
-#
-# Alternatively, you may comment the line below and commit the
-# secrets files as long as you replace their contents by environment
-# variables.
-/config/*.secret.exs
+# production
+/client/build
+
+# misc
+/client/.DS_Store
+/client/.env.local
+/client/.env.development.local
+/client/.env.test.local
+/client/.env.production.local
+
+/client/npm-debug.log*
+/client/yarn-debug.log*
+/client/yarn-error.log*
+
+/.idea
+
+.env
