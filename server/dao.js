@@ -10,7 +10,7 @@ const pool = new Pool({
 });
 
 const getExperiences = (request, response) => {
-  getQueryResults(request, response, 'SELECT * FROM experiences ORDER BY start_date DESC');
+  getQueryResults(request, response, 'SELECT * FROM experience ORDER BY start_date DESC');
 };
 
 const getProjects = (request, response) => {

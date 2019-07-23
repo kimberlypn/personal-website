@@ -1,20 +1,15 @@
-CREATE TABLE public.experience
+CREATE TABLE experience
 (
-    id bigint NOT NULL DEFAULT nextval('experience_id_seq'::regclass),
-    company character varying(255) COLLATE pg_catalog."default" NOT NULL,
-    position character varying(255) COLLATE pg_catalog."default" NOT NULL,
-    location character varying(255) COLLATE pg_catalog."default" NOT NULL,
-    description text COLLATE pg_catalog."default",
-    start_date date NOT NULL,
-    end_date date,
-    inserted_at timestamp without time zone NOT NULL,
-    updated_at timestamp without time zone NOT NULL,
+    id SERIAL,
+    company VARCHAR(255) NOT NULL,
+    position VARCHAR(255) NOT NULL,
+    location VARCHAR(255) NOT NULL,
+    description TEXT[],
+    start_date DATE NOT NULL,
+    end_date DATE,
+    inserted_at TIMESTAMP NOT NULL DEFAULT NOW(),
+    updated_at TIMESTAMP NOT NULL DEFAULT NOW(),
     CONSTRAINT experience_pkey PRIMARY KEY (id)
-)
-WITH (
-    OIDS = FALSE
-)
-TABLESPACE pg_default;
+);
 
-ALTER TABLE public.experience
-    OWNER to personal_website;
+ALTER TABLE experience OWNER TO personal_website;

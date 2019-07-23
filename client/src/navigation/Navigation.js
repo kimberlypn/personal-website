@@ -13,7 +13,7 @@ export const Navigation = () => {
           <NavItem><NavLink href='/'>ABOUT</NavLink></NavItem>
           <NavItem><NavLink href='/projects'>PROJECTS</NavLink></NavItem>
           <NavItem><NavLink href='/skills'>SKILLS</NavLink></NavItem>
-          <NavItem><NavLink href='/experiences'>EXPERIENCE</NavLink></NavItem>
+          <NavItem><NavLink href='/experiences'>EXPERIENCES</NavLink></NavItem>
         </Nav>
       </Collapse>
     </Navbar>
