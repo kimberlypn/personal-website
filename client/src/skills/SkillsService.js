@@ -11,16 +11,16 @@ function componentDidMount() {
 
 function fetchSkills() {
   axios.get('/api/v1/skills')
-    .then(response => (this.setState({skills: sortCategories(groupSkillsByCategory(response.data))})));
+    .then(response => (this.setState({skills: sortSkillTypes(groupSkillsByType(response.data))})));
 }
 
-function groupSkillsByCategory(skills) {
-  return _.groupBy(skills, skill => (skill.category.toLowerCase()));
+function groupSkillsByType(skills) {
+  return _.groupBy(skills, skill => (skill.type.toLowerCase()));
 }
 
-function sortCategories(categories) {
-  let sortedCategories = {};
-  Object.keys(categories).sort().forEach(key => sortedCategories[key] = categories[key]);
+function sortSkillTypes(types) {
+  let sortedTypes = {};
+  Object.keys(types).sort().forEach(key => sortedTypes[key] = types[key]);
   
-  return sortedCategories;
+  return sortedTypes;
 }

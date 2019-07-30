@@ -1,7 +1,7 @@
 import React from 'react';
 import BaseComponent from '../BaseComponent';
 import SkillsService from './SkillsService';
-import {SkillCategory} from './SkillCategory';
+import {SkillType} from './SkillType';
 
 export class Skills extends BaseComponent {
   constructor(props) {
@@ -12,14 +12,14 @@ export class Skills extends BaseComponent {
     this.registerService(SkillsService);
   }
   
-  renderSkillCategories() {
+  renderSkillTypes() {
     return (
       <React.Fragment>
-        <SkillCategory category={'programming languages'} skills={this.state.skills['programming languages']}/>
+        <SkillType type={'programming languages'} skills={this.state.skills['programming languages']}/>
         {Object.keys(this.state.skills).map(skill => (
           skill === 'programming languages'
             ? null
-            : <SkillCategory category={skill} skills={this.state.skills[skill]}/>
+            : <SkillType type={skill} skills={this.state.skills[skill]}/>
         ))}
       </React.Fragment>
     );
@@ -28,7 +28,7 @@ export class Skills extends BaseComponent {
   render() {
     return (
       <div className='container-fluid' id='skills'>
-        {Object.keys(this.state.skills).length > 0 && this.renderSkillCategories()}
+        {Object.keys(this.state.skills).length > 0 && this.renderSkillTypes()}
       </div>
     );
   }

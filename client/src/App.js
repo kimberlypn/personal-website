@@ -21,7 +21,7 @@ function App() {
           <Route path='/experiences' exact={true} component={Experiences}/>
           <Route path='/projects/:id(\d+)'
                  exact={true}
-                 render={({match}) => <Project projectId={match.params.id}/>}
+                 render={({match}) => <Project projectId={parseInt(match.params.id, 10)}/>}
           />
         </BrowserRouter>
         <Footer/>
