@@ -10,15 +10,29 @@ const pool = new Pool({
 });
 
 const getExperiences = (request, response) => {
-  getQueryResults(request, response, 'SELECT * FROM experiences ORDER BY start_date DESC');
+  getQueryResults(request, response, 'SELECT * FROM experience ORDER BY start_date DESC');
 };
 
 const getProjects = (request, response) => {
-  getQueryResults(request, response, 'SELECT * FROM projects ORDER BY title ASC');
+  getQueryResults(
+    request,
+    response,
+    'SELECT project.id AS id, project.title, project.headline, project.technology, project.collaborators, project.img_src, project.repo, project.demo, project_type.type '
+    + 'FROM project '
+    + 'JOIN project_type ON project.type = project_type.id '
+    + 'ORDER BY project.title ASC'
+  );
 };
 
 const getSkills = (request, response) => {
-  getQueryResults(request, response, 'SELECT * FROM skills ORDER BY name ASC');
+  getQueryResults(
+    request,
+    response,
+    'SELECT skill.id AS id, skill.name, skill.proficiency, skill_type.type '
+    + 'FROM skill '
+    + 'JOIN skill_type ON skill.type = skill_type.id '
+    + 'ORDER BY skill.name ASC'
+  );
 };
 
 const getQueryResults = (request, response, query, queryParams = []) => {

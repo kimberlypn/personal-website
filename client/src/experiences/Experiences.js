@@ -13,21 +13,6 @@ export default class Experiences extends BaseComponent {
     this.registerService(ExperiencesService);
   }
   
-  renderDescription(experience) {
-    let descriptionListElements = [];
-    if (!experience.description) {
-      descriptionListElements.push(<li>TBD</li>);
-    } else {
-      // Create array entry for each bullet point in the description
-      const bulletPoints = experience.description.split('- ');
-      // List each bullet point, skipping the first entry, which is null
-      for (let i = 1; i < bulletPoints.length; i++) {
-        descriptionListElements.push(<li key={i}>{bulletPoints[i]}</li>)
-      }
-    }
-    return descriptionListElements;
-  }
-  
   render() {
     return (
       <div className='container-fluid' id='experiences'>
@@ -43,7 +28,7 @@ export default class Experiences extends BaseComponent {
             <Col md='8'>
               <Col md='12' className='experience-position'>{experience.position}</Col>
               <Col md='12' className='experience-tasks'>
-                <ul>{this.renderDescription(experience)}</ul>
+                <ul>{experience.description.map((bulletPoint, idx) => (<li key={idx}>{bulletPoint}</li>))}</ul>
               </Col>
             </Col>
           </Row>

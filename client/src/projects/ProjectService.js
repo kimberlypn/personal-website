@@ -5,10 +5,10 @@ export default {
 }
 
 function componentDidMount() {
-  fetchProject.call(this);
+  fetchProjects.call(this);
 }
 
-function fetchProject() {
+function fetchProjects() {
   axios.get('/api/v1/projects')
     .then(response => {
       const projects = response.data;
