@@ -2,7 +2,7 @@ const express = require('express');
 const path = require('path');
 const bodyParser = require('body-parser');
 const port = process.env.PORT || 5000;
-const db = require('./dao');
+const db = require('./server/dao');
 
 const app = express();
 
