@@ -1,33 +1,30 @@
-#tag-line {
-  font-size: 40px;
-  margin-bottom: 20px;
+#me {
+  height: auto;
+  width: 100%;
+}
+
+#tag-line,
+#got-ref {
   text-align: right;
 }
 
-#tag-line p {
-  cursor: default;
+#tag-line {
+  font-size: 40px;
+  margin-bottom: 0;
 }
 
 #got-ref {
   color: #59c6bb;
   display: none;
-  font-size: 30px;
+  font-size: 25px;
 }
 
-#tag-line:hover #got-ref {
+#tag-line:hover + #got-ref {
   /* Display Game of Thrones Easter egg when hovering over the tag line */
   display: block;
 }
 
 #blurb {
+  margin-top: 1rem;
   text-align: justify;
-}
-
-#home img {
-  height: auto;
-  width: 90%;
-}
-
-#me {
-  text-align: center;
 }

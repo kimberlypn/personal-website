@@ -24,8 +24,8 @@ function App() {
                  render={({match}) => <Project projectId={parseInt(match.params.id, 10)}/>}
           />
         </BrowserRouter>
-        <Footer/>
       </div>
+      <Footer/>
     </React.Fragment>
   );
 }
