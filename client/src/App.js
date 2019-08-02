@@ -11,9 +11,9 @@ import './App.css';
 
 function App() {
   return (
-    <React.Fragment>
+    <div className='container'>
       <Navigation/>
-      <div className='container-fluid' id='index'>
+      <div id='index'>
         <BrowserRouter>
           <Route path='/' exact={true} component={Home}/>
           <Route path='/projects' exact={true} component={Projects}/>
@@ -24,9 +24,9 @@ function App() {
                  render={({match}) => <Project projectId={parseInt(match.params.id, 10)}/>}
           />
         </BrowserRouter>
+        <Footer/>
       </div>
-      <Footer/>
-    </React.Fragment>
+    </div>
   );
 }
 

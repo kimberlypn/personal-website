@@ -19,7 +19,7 @@ export const Projects = () => {
   }, []);
   
   return (
-    <div className='container-fluid' id='projects'>
+    <div id='projects'>
       <Row>
         {projects.map((project, idx) => (
           <Col md='6' key={idx} className='project'>

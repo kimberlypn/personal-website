@@ -27,7 +27,7 @@ export class Skills extends BaseComponent {
   
   render() {
     return (
-      <div className='container-fluid' id='skills'>
+      <div id='skills'>
         {Object.keys(this.state.skills).length > 0 && this.renderSkillTypes()}
       </div>
     );

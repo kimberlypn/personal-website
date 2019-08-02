@@ -20,7 +20,7 @@ export default class Project extends BaseComponent {
   
   render() {
     return (
-      <div className='container-fluid project-page'>
+      <div className='project-page'>
         <Row>
           {this.state.prevProjectId &&
           <Col md='2' className='project-arrows'>
