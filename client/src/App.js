@@ -11,19 +11,21 @@ import './App.css';
 
 function App() {
   return (
-    <div className='container' id='index'>
+    <div className='container'>
       <Navigation/>
-      <BrowserRouter>
-        <Route path='/' exact={true} component={Home}/>
-        <Route path='/projects' exact={true} component={Projects}/>
-        <Route path='/skills' exact={true} component={Skills}/>
-        <Route path='/experiences' exact={true} component={Experiences}/>
-        <Route path='/projects/:id(\d+)'
-               exact={true}
-               render={({match}) => <Project projectId={parseInt(match.params.id, 10)}/>}
-        />
-      </BrowserRouter>
-      <Footer/>
+      <div id='index'>
+        <BrowserRouter>
+          <Route path='/' exact={true} component={Home}/>
+          <Route path='/projects' exact={true} component={Projects}/>
+          <Route path='/skills' exact={true} component={Skills}/>
+          <Route path='/experiences' exact={true} component={Experiences}/>
+          <Route path='/projects/:id(\d+)'
+                 exact={true}
+                 render={({match}) => <Project projectId={parseInt(match.params.id, 10)}/>}
+          />
+        </BrowserRouter>
+        <Footer/>
+      </div>
     </div>
   );
 }

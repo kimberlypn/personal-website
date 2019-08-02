@@ -41,7 +41,7 @@ html {
   }
 }
 
-#root > #index {
+#root #index {
   /* Make everything invisible upon start of animation */
   opacity: 0;
 
