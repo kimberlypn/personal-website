@@ -4,7 +4,7 @@ import {Contact} from './Contact';
 import './Home.css';
 
 export const Home = () => (
-  <div className='container-fluid' id='home'>
+  <div id='home'>
     <Row>
       <Col md='6'><img id='me' src={require('../static/images/me.jpg')} alt='Me'/></Col>
       <Col md='6'>
@@ -15,9 +15,9 @@ export const Home = () => (
           technological sphere. I graduated from Northeastern University with a Bachelor of Science in computer science
           and have experience in full-stack development. My interest lies particularly in web development, as I enjoy
           the creativity involved with solving problems and presenting the solutions in a way that users can
-          effortlessly reap the benefits. Whether the impact be big or small, I want to build useful applications that
-          can make people's days that much better. I love how prevalent CS is in almost anything and the self-empowered
-          problem-solving techniques that this field demands.
+          effortlessly reap the benefits. Throughout my career, I want to build useful applications that can streamline
+          everyday processes and explore the possibilities of data wealth. I love how prevalent CS is in almost anything
+          and the self-empowered problem-solving techniques that this field demands.
         </p>
         <Contact/>
       </Col>

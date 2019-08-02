@@ -11,9 +11,6 @@ html {
 #root {
   font-family: 'Gidole-Regular', serif;
   font-size: 17px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 60%;
 }
 
 /* Animation source: https://fabriceleven.com/design/creating-fancy-css3-fade-in-animations-on-page-load/ */

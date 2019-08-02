@@ -6,12 +6,12 @@ import {Skill} from './Skill';
 import './SkillType.css';
 
 export const SkillType = props => {
-  return <React.Fragment>
+  return (
     <ExpansionPanel defaultExpanded={props.type.toLowerCase() === 'programming languages'}>
       <ExpansionPanelSummary className='skill-type-header' expandIcon={<ExpandMoreIcon/>}>
         {props.type.toUpperCase()}
       </ExpansionPanelSummary>
       {props.skills.map((skill, idx) => (<Skill key={idx} skill={skill}/>))}
     </ExpansionPanel>
-  </React.Fragment>;
+  );
 };

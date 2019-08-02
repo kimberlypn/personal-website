@@ -11,22 +11,20 @@ import './App.css';
 
 function App() {
   return (
-    <React.Fragment>
+    <div className='container' id='index'>
       <Navigation/>
-      <div className='container-fluid' id='index'>
-        <BrowserRouter>
-          <Route path='/' exact={true} component={Home}/>
-          <Route path='/projects' exact={true} component={Projects}/>
-          <Route path='/skills' exact={true} component={Skills}/>
-          <Route path='/experiences' exact={true} component={Experiences}/>
-          <Route path='/projects/:id(\d+)'
-                 exact={true}
-                 render={({match}) => <Project projectId={parseInt(match.params.id, 10)}/>}
-          />
-        </BrowserRouter>
-      </div>
+      <BrowserRouter>
+        <Route path='/' exact={true} component={Home}/>
+        <Route path='/projects' exact={true} component={Projects}/>
+        <Route path='/skills' exact={true} component={Skills}/>
+        <Route path='/experiences' exact={true} component={Experiences}/>
+        <Route path='/projects/:id(\d+)'
+               exact={true}
+               render={({match}) => <Project projectId={parseInt(match.params.id, 10)}/>}
+        />
+      </BrowserRouter>
       <Footer/>
-    </React.Fragment>
+    </div>
   );
 }
 

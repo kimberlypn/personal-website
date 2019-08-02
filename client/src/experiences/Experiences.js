@@ -15,11 +15,12 @@ export default class Experiences extends BaseComponent {
   
   render() {
     return (
-      <div className='container-fluid' id='experiences'>
+      <div id='experiences'>
         {this.state.experiences.map((experience, idx) => (
           <Row className='experience' key={idx}>
             <Col md='3'>
-              <Col md='12' className='experience-company'>{experience.company}</Col>
+              {(idx === 0 || this.state.experiences[idx - 1].company !== experience.company) &&
+              <Col md='12' className='experience-company'>{experience.company}</Col>}
               <Col md='12' className='experience-details'>
                 [{this.getDateRange(experience.start_date, experience.end_date)} | {experience.location}]
               </Col>
