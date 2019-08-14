@@ -1,6 +1,6 @@
 import React from 'react';
 import {Col, Row} from 'reactstrap';
-import {IconLink} from '../subcomponents/IconLink';
+import {IconLink} from '../../../components/iconLink/IconLink';
 import './Contact.css';
 
 export const Contact = () => (

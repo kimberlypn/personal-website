@@ -1,7 +1,7 @@
 import React from 'react';
-import BaseComponent from '../BaseComponent';
-import SkillsService from './SkillsService';
+import BaseComponent from '../../components/baseComponent/BaseComponent';
 import {SkillType} from './SkillType';
+import SkillsService from './SkillsService';
 
 export class Skills extends BaseComponent {
   constructor(props) {

@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Gidole-Regular';
-  src: url('./static/fonts/Gidole-Regular.ttf');
+  src: url('../assets/fonts/Gidole-Regular.ttf');
 }
 
 html {

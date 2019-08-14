@@ -1,7 +1,7 @@
 import React from 'react';
-import BaseComponent from '../BaseComponent';
-import ExperiencesService from './ExperiencesService';
+import BaseComponent from '../../components/baseComponent/BaseComponent';
 import {Col, Row} from 'reactstrap';
+import ExperiencesService from './ExperiencesService';
 import './Experiences.css';
 
 export default class Experiences extends BaseComponent {

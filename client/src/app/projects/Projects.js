@@ -25,7 +25,7 @@ export const Projects = () => {
           <Col md='6' key={idx} className='project'>
             <a href={`/projects/${project.id}`}>
               <div className='project-bg'>
-                <img src={require(`../static/images/${project.img_src}`)} alt={project.img_src}/>
+                <img src={require(`../../assets/images/${project.img_src}`)} alt={project.img_src}/>
                 <div className='project-title'>
                   <p>{project.title.toUpperCase()}</p>
                 </div>

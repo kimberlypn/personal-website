@@ -1,9 +1,9 @@
 import React from 'react';
-import BaseComponent from '../BaseComponent';
-import ProjectService from './ProjectService';
+import BaseComponent from '../../components/baseComponent/BaseComponent';
 import {Col, Row} from 'reactstrap';
-import {IconLink} from '../subcomponents/IconLink';
+import {IconLink} from '../../components/iconLink/IconLink';
 import {ProjectSummaryRenderer} from './ProjectSummaryRenderer';
+import ProjectService from './ProjectService';
 
 export default class Project extends BaseComponent {
   constructor(props) {
@@ -26,13 +26,14 @@ export default class Project extends BaseComponent {
           <Col md='2' className='project-arrows'>
             <IconLink title='Previous'
                       icon='fas fa-chevron-circle-left'
-                      link={`/projects/${this.state.prevProjectId}`}/>
+                      link={`/projects/${this.state.prevProjectId}`}
+            />
           </Col>}
           {Object.keys(this.state.project).length > 0 &&
           <Col md='8'>
             <h1>{this.state.project.title}</h1>
             <p className='project-headline'>{this.state.project.headline}</p>
-            <img src={require(`../static/images/${this.state.project.img_src}`)} alt={this.state.project.title}/>
+            <img src={require(`../../assets/images/${this.state.project.img_src}`)} alt={this.state.project.title}/>
             <div className='project-section project-details'>
               <h3>Details</h3>
               <p>

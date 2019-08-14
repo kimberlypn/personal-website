@@ -1,12 +1,12 @@
 import React from 'react';
 import {Col, Row} from 'reactstrap';
-import {Contact} from './Contact';
+import {Contact} from './contact/Contact';
 import './Home.css';
 
 export const Home = () => (
   <div id='home'>
     <Row>
-      <Col md='6'><img id='me' src={require('../static/images/me.jpg')} alt='Me'/></Col>
+      <Col md='6'><img id='me' src={require('../../assets/images/me.jpg')} alt='Me'/></Col>
       <Col md='6'>
         <p id='tag-line'>I sleep, and I code things.</p>
         <span id='got-ref'>(Yes, that was a Game of Thrones reference.)</span>
