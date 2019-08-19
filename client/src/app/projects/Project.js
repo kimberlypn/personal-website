@@ -1,7 +1,7 @@
 import React from 'react';
 import BaseComponent from '../../components/baseComponent/BaseComponent';
 import {Col, Row} from 'reactstrap';
-import {IconLink} from '../../components/iconLink/IconLink';
+import IconLink from '../../components/iconLink/IconLink';
 import {ProjectSummaryRenderer} from './ProjectSummaryRenderer';
 import ProjectService from './ProjectService';
 

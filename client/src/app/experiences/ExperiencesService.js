@@ -10,24 +10,21 @@ function componentDidMount() {
 }
 
 function fetchExperiences() {
-  axios.get('/api/v1/experiences')
-    .then(response => (this.setState({experiences: response.data})));
+  axios.get('/api/v1/experiences').then(response => (this.setState({experiences: response.data})));
 }
 
 function getDateRange(startDate, endDate) {
   const START_MONTH = getMonthAbbreviation(startDate);
   const START_YEAR = getYearAbbreviation(startDate);
   if (!endDate) {
-    return `${START_MONTH}  ${START_YEAR} - Present`;
+    return `${START_MONTH} ${START_YEAR} - Present`;
   }
   
   const END_MONTH = getMonthAbbreviation(endDate);
   const END_YEAR = getYearAbbreviation(endDate);
-  if (START_YEAR === END_YEAR) {
-    return `${START_MONTH} - ${END_MONTH} ${START_YEAR}`;
-  } else {
-    return `${START_MONTH} ${START_YEAR} - ${END_MONTH} ${END_YEAR}`;
-  }
+  return START_YEAR === END_YEAR
+    ? `${START_MONTH} - ${END_MONTH} ${START_YEAR}`
+    : `${START_MONTH} ${START_YEAR} - ${END_MONTH} ${END_YEAR}`;
 }
 
 function getMonthAbbreviation(date) {

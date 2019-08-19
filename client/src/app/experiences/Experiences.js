@@ -25,8 +25,7 @@ export default class Experiences extends BaseComponent {
                 [{this.getDateRange(experience.start_date, experience.end_date)} | {experience.location}]
               </Col>
             </Col>
-            <Col md='1'/>
-            <Col md='8'>
+            <Col md={{size: 8, offset: 1}}>
               <Col md='12' className='experience-position'>{experience.position}</Col>
               <Col md='12' className='experience-tasks'>
                 <ul>{experience.description.map((bulletPoint, idx) => (<li key={idx}>{bulletPoint}</li>))}</ul>

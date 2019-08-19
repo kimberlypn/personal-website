@@ -1,9 +1,9 @@
 import React from 'react';
 import {BrowserRouter, Route} from 'react-router-dom';
 import Experiences from './experiences/Experiences';
-import {Footer} from './footer/Footer';
-import {Home} from './home/Home';
-import {Navigation} from './navigation/Navigation';
+import Footer from './footer/Footer';
+import Home from './home/Home';
+import Navigation from './navigation/Navigation';
 import Project from './projects/Project';
 import {Projects} from './projects/Projects';
 import {Skills} from './skills/Skills';
