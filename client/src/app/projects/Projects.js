@@ -3,19 +3,11 @@ import axios from 'axios';
 import {Col, Row} from 'reactstrap';
 import './Projects.css';
 
-export const Projects = () => {
+export default function Projects() {
   const [projects, setProjects] = React.useState([]);
   
   React.useEffect(() => {
-    const fetchProjects = async () => {
-      try {
-        const response = await axios.get('/api/v1/projects');
-        setProjects(response.data);
-      } catch (e) {
-        console.log(e);
-      }
-    };
-    fetchProjects();
+    axios.get('/api/v1/projects').then(response => setProjects(response.data));
   }, []);
   
   return (
@@ -26,9 +18,7 @@ export const Projects = () => {
             <a href={`/projects/${project.id}`}>
               <div className='project-bg'>
                 <img src={require(`../../assets/images/${project.img_src}`)} alt={project.img_src}/>
-                <div className='project-title'>
-                  <p>{project.title.toUpperCase()}</p>
-                </div>
+                <p className='project-title'>{project.title.toUpperCase()}</p>
               </div>
             </a>
           </Col>

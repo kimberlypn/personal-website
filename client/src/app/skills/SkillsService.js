@@ -6,12 +6,11 @@ export default {
 }
 
 function componentDidMount() {
-  fetchSkills.call(this);
+  fetchSkills(this.setState.bind(this));
 }
 
-function fetchSkills() {
-  axios.get('/api/v1/skills')
-    .then(response => (this.setState({skills: sortSkillTypes(groupSkillsByType(response.data))})));
+function fetchSkills(setState) {
+  axios.get('/api/v1/skills').then(response => setState({skills: sortSkillTypes(groupSkillsByType(response.data))}));
 }
 
 function groupSkillsByType(skills) {
@@ -21,6 +20,5 @@ function groupSkillsByType(skills) {
 function sortSkillTypes(types) {
   let sortedTypes = {};
   Object.keys(types).sort().forEach(key => sortedTypes[key] = types[key]);
-  
   return sortedTypes;
 }

@@ -1,0 +1,43 @@
+.project-page h1 {
+  font-size: 65px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.project-page h3 {
+  color: #59c6bb;
+  text-transform: uppercase;
+}
+
+.project-headline {
+  text-align: center;
+}
+
+.project-page img {
+  display: block;
+  margin: 20px auto;
+  width: 100%;
+}
+
+.project-details, .project-summary {
+  margin-bottom: 30px;
+}
+
+.project-summary {
+  text-align: justify;
+}
+
+.project-links {
+  text-align: center;
+}
+
+.project-links i {
+  font-size: 50px;
+  margin: 0 5px;
+}
+
+.project-arrows {
+  color: #59c6bb;
+  font-size: 50px;
+  text-align: center;
+}

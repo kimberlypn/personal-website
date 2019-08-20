@@ -5,11 +5,11 @@ import Footer from './footer/Footer';
 import Home from './home/Home';
 import Navigation from './navigation/Navigation';
 import Project from './projects/Project';
-import {Projects} from './projects/Projects';
-import {Skills} from './skills/Skills';
+import Projects from './projects/Projects';
+import Skills from './skills/Skills';
 import './App.css';
 
-function App() {
+export default React.memo(function App() {
   return (
     <div className='container'>
       <Navigation/>
@@ -28,6 +28,4 @@ function App() {
       </div>
     </div>
   );
-}
-
-export default App;
+});

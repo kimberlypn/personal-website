@@ -6,11 +6,11 @@ export default {
 }
 
 function componentDidMount() {
-  fetchExperiences.call(this);
+  fetchExperiences(this.setState.bind(this));
 }
 
-function fetchExperiences() {
-  axios.get('/api/v1/experiences').then(response => (this.setState({experiences: response.data})));
+function fetchExperiences(setState) {
+  axios.get('/api/v1/experiences').then(response => setState({experiences: response.data}));
 }
 
 function getDateRange(startDate, endDate) {

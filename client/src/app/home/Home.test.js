@@ -28,11 +28,11 @@ describe('Home test', () => {
       expect(component.find('#blurb').text()).toBe(
         'Hello, world! I am a software developer with a passion for never-ending learning in this ever-growing '
         + 'technological sphere. I graduated from Northeastern University with a Bachelor of Science in computer '
-        + 'science and have experience in full-stack development. My interest lies particularly in web development, as '
-        + 'I enjoy the creativity involved with solving problems and presenting the solutions in a way that users can '
-        + 'effortlessly benefit. Throughout my career, I hope to build useful applications that can streamline '
-        + 'everyday processes and explore the possibilities of data wealth. I love how prevalent CS is in almost '
-        + 'anything and the self-empowered problem-solving techniques that this field demands.'
+        + 'science (CS) and have experience in full-stack development. My interest lies particularly in web '
+        + 'development, as I enjoy the creativity involved with solving problems and presenting the solutions in a way '
+        + 'that users can effortlessly benefit. Throughout my career, I hope to build useful applications that can '
+        + 'streamline everyday processes and explore the possibilities of data wealth. I love how prevalent CS is in '
+        + 'almost anything and the self-empowered problem-solving techniques that this field demands.'
       );
     });
     

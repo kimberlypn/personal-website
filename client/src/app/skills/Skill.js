@@ -1,8 +1,8 @@
 import React from 'react';
-import {Row, Col} from 'reactstrap';
+import {Col, Row} from 'reactstrap';
 import './Skill.css';
 
-export const Skill = props => {
+export default React.memo(function Skill(props) {
   // Render attained skill points as teal and missing skill points (out of 10) as grey
   let skillPoints = [];
   for (let i = 0; i < 10; i++) {
@@ -20,4 +20,4 @@ export const Skill = props => {
       <Col md='7'>{skillPoints}</Col>
     </Row>
   );
-};
+});
