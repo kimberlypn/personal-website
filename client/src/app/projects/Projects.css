@@ -1,0 +1,40 @@
+.project {
+  margin-bottom: 30px;
+}
+
+.project img {
+  width: 100%;
+}
+
+.project-bg {
+  /* Fit as much as can fit into the card to evenly size everything */
+  height: 300px;
+  overflow: hidden;
+}
+
+.project-title {
+  font-size: 26px;
+  /* Center the title vertically and horizontally */
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.project-bg:hover img {
+  /* Hide the image on hover */
+  opacity: 0;
+}
+
+.project-bg:hover {
+  /* Ease in the background color on hover */
+  background-color: #59c6bb;
+  transition: .5s ease;
+}
+
+.project-bg:hover .project-title {
+  color: white;
+  /* Display project title on hover */
+  display: block;
+}

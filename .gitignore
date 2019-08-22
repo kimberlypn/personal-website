@@ -6,6 +6,7 @@
 
 # testing
 /client/coverage
+/client/test-report.html
 
 # production
 /client/build
