@@ -7,11 +7,11 @@ import './SkillType.css';
 
 export default function SkillType(props) {
   return (
-    <ExpansionPanel defaultExpanded={props.type.toLowerCase() === 'programming languages'}>
+    <ExpansionPanel defaultExpanded={props.type === 'programming languages'}>
       <ExpansionPanelSummary className='skill-type-header' expandIcon={<ExpandMoreIcon/>}>
         {props.type.toUpperCase()}
       </ExpansionPanelSummary>
-      {props.skills.map((skill, idx) => (<Skill key={idx} skill={skill}/>))}
+      {props.skills.map(skill => (<Skill key={skill.id} skill={skill}/>))}
     </ExpansionPanel>
   );
 };

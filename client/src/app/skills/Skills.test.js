@@ -33,7 +33,9 @@ describe('Skills test', () => {
     
     it('should render SkillType for each skill', () => {
       const skillTypes = component.find('SkillType');
-      component.instance().state.skills.forEach((skill, idx) => {
+      const skills = component.instance().state.skills;
+      expect(skillTypes.length).toBe(skills.length);
+      skills.forEach((skill, idx) => {
         expect(skillTypes.get(idx).props).toEqual({type: skill.skillType, skills: skill.skills});
       });
     });
