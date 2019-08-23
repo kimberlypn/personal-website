@@ -1,7 +1,6 @@
 import React from 'react';
 import {configure, shallow} from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
-import {mockService} from '../../components/testHelper/TestHelper';
 import Experiences from './Experiences';
 import ExperiencesService from './ExperiencesService';
 
@@ -10,7 +9,6 @@ configure({adapter: new Adapter});
 describe('Experiences test', () => {
   let component;
   beforeEach(() => {
-    mockService(ExperiencesService);
     ExperiencesService.getDateRange = jest.fn(() => 'date');
     component = shallow(<Experiences/>);
   });

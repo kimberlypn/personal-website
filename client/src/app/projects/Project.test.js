@@ -1,16 +1,13 @@
 import React from 'react';
 import {configure, shallow} from 'enzyme';
 import Adaptor from 'enzyme-adapter-react-16';
-import {mockService} from '../../components/testHelper/TestHelper';
 import Project from './Project';
-import ProjectService from './ProjectService';
 
 configure({adapter: new Adaptor()});
 
 describe('Project test', () => {
   let component;
   beforeEach(() => {
-    mockService(ProjectService);
     component = shallow(<Project/>);
   });
   
