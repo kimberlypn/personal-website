@@ -45,7 +45,7 @@ VALUES
 ),
 (
     'Northeastern University',
-    'Data Administrator',
+    'Data Entry Operator',
     'Boston',
     '{
         "Contributed to development of online, searchable, and annotatable database of all the drawings in Henry David Thoreau''s journal, which had never been studied before",
