@@ -14,11 +14,15 @@ function fetchSkills(setState) {
 }
 
 function groupSkillsByType(skills) {
-  return _.groupBy(skills, skill => (skill.type.toLowerCase()));
+  return _.groupBy(skills, skill => skill.type.toLowerCase());
 }
 
-function sortSkillTypes(types) {
-  let sortedTypes = {};
-  Object.keys(types).sort().forEach(key => sortedTypes[key] = types[key]);
+function sortSkillTypes(skillTypes) {
+  const sortedTypes = [];
+  Object.keys(skillTypes).sort().forEach(skillType =>
+    skillType === 'programming languages'
+      ? sortedTypes.unshift({skillType, skills: skillTypes[skillType]})
+      : sortedTypes.push({skillType, skills: skillTypes[skillType]})
+  );
   return sortedTypes;
 }
