@@ -24,7 +24,7 @@
   "homepage": "https://github.com/kimberlypn/personal-website#readme",
   "dependencies": {
     "dotenv": "^8.0.0",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "path": "^0.12.7",
     "pg": "^7.11.0"
   },
